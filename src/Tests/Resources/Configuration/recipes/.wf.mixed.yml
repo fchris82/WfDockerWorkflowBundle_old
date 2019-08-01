@@ -1,0 +1,10 @@
+version: '2.0.0'
+name: 'recipe_test'
+
+system: ~
+
+recipes:
+    simple: ~
+    simple_skip: false
+    configurable:
+        name: 'required'

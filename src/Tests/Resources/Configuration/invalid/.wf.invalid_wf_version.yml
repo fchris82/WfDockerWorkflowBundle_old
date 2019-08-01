@@ -1,0 +1,4 @@
+version:
+    base: "2.0.0"
+    wf_minimum_version: "9999.9999.9999"
+name: 'minimal_test'

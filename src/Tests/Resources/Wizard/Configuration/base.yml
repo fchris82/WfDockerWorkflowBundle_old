@@ -1,0 +1,17 @@
+Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard:
+    name: 'Base 1 Wizard'
+    enabled: true
+    group: Builder
+    priority: 0
+
+Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard:
+    name: 'Changed Name Wizard'
+    enabled: true
+    group: Builder
+    priority: 0
+
+Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard:
+    name: 'Disabled Wizard'
+    enabled: false
+    group: Disabled
+    priority: 0

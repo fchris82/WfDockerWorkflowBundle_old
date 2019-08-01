@@ -1,0 +1,19 @@
+imports:
+    - .wf.yml.dist
+
+version: "2.0.0@2.1.1"
+
+## The configs of recipes
+#recipes:
+#    # Symfony 3 recipe
+#    symfony3:
+#        # Symfony environment.
+#        env:     dev
+#        server:
+#            # You can switch on and off the xdebug.
+#            xdebug: true
+#
+#    # Include a MySQL service
+#    mysql:
+#        # If you want to enable this container from outside set the port number.
+#        port:      3312

@@ -1,0 +1,11 @@
+version:
+    base: "2.0.0"
+    wf_minimum_version: null
+name:    "recipe_test"
+imports: []
+docker_data_dir: "%wf.target_directory%/.data"
+system: []
+recipes:
+    simple: []
+    configurable:
+        name: 'required'

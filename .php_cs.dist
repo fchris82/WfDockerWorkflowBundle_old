@@ -1,0 +1,40 @@
+<?php
+$srcDir = __DIR__ . DIRECTORY_SEPARATOR . 'src';
+$testDir = __DIR__ . DIRECTORY_SEPARATOR . 'tests';
+$finder = PhpCsFixer\Finder::create()
+    ->in([$srcDir, $testDir])
+    ->exclude('skeletons')
+    ->exclude('template')
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        'psr0' => ['dir' => $srcDir],
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'concat_space' => ['spacing' => 'one'],
+        'no_php4_constructor' => true,
+        'ordered_imports' => true,
+        'no_unreachable_default_argument_value' => true,
+        'braces' => ['allow_single_line_closure' => true],
+        'phpdoc_order' => true,
+        // It may cause problems if eg. there are more variable before a for cycle
+        'phpdoc_var_without_name' => false,
+        // We don't want '.' for every end of doccomment
+        'phpdoc_summary' => false,
+        // Because of eg. /** @Ignore */ of JMSTranslation Bundle
+        'phpdoc_to_comment' => false,
+        // Néha bizony van értelme behúzni a tömböknél az értéket, ezért kikapcsoljuk, hogy levágja a "szóközöket" a => operátor körül.
+        'binary_operator_spaces' => ['operators' => [
+            "=>" => null,
+            "=" => null,
+        ]],
+        'heredoc_to_nowdoc' => false,
+        'declare_strict_types' => true,
+        // It is important because of `declare_strict_types`
+        'blank_line_after_opening_tag' => false,
+    ])
+    ->setRiskyAllowed(true)
+    ->setFinder($finder)
+;

@@ -1,0 +1,7 @@
+version:
+    base: "2.0.0"
+    wf_minimum_version: "2.1.1"
+name:    "test"
+imports:
+    - '.wf.yml.dist'
+docker_data_dir: '%wf.target_directory%/.data'

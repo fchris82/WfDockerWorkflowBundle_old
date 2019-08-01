@@ -1,0 +1,7 @@
+version: '2.0.0'
+name: 'recipe_test'
+
+system: ~
+
+# This is an existing recipe, without configuration:
+system_without_configuration: ~

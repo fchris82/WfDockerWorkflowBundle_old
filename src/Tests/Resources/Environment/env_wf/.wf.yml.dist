@@ -1,0 +1,48 @@
+version: "2.0.0"
+name:    "test"
+
+## You can add extra commands.
+#commands:
+#    init:
+#        - mkdir -p .wf/.data/mysql
+#        - echo "<info>✔ Edit the new files before run the <fg=blue;options=bold>install</> command:</info>"
+#        - 'if [ ! -f .wf.yml ]; then echo "imports: [.wf.yml.dist]" > .wf.yml; fi'
+#        - echo "   - <comment>.wf.yml</comment>"
+#
+#    dep:
+#        - wf php-exec bin/dep ${@}
+#
+## The configs of recipes
+#recipes:
+#    # Symfony 3 recipe
+#    symfony3:
+#        version: php7.0
+#        # Symfony environment.
+#        env:     dev
+#        server:
+#            # You can switch on and off the xdebug.
+#            xdebug:         false
+#            # You can switch on and off debug mode. IMPORTANT! The debug mode makes lot of logs!
+#            nginx_debug:    false
+#            timezone:       Europe/Budapest
+#            timeout:        60
+#            max_post_size:  10M
+#
+#    # Include a MySQL service
+#    mysql:
+#        # Docker image tag
+#        version:   "5.6"
+#        # Database name
+#        database:  "symfony"
+#        # The root password.
+#        password:  "root"
+#        # If you want to enable this container from outside set the port number.
+##        port:      3309
+#
+#    git_flow:             []
+#
+#    # You can enable the nginx-reverse-proxy.
+#    nginx_reverse_proxy:
+#        # You have to set the service and its host and port settings.
+#        settings:
+#            web: ~

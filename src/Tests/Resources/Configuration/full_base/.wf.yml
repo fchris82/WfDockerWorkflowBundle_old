@@ -1,0 +1,35 @@
+imports:
+    - .wf.yml.dist
+
+version: "2.0.0@2.1.1"
+
+docker_data_dir: '%wf.target_directory%/.data'
+#
+#makefile:
+#    - Makefile
+#    - Makefile.dist
+#
+#docker_compose:
+#    version: 3.4
+#    include:
+#        - '~/global.docker-compose.yml'
+#    extension:
+#        services:
+#            web:
+#                environment:
+#                    TEST: 'TEST'
+#
+## The configs of recipes
+#recipes:
+#    # Symfony 3 recipe
+#    symfony3:
+#        # Symfony environment.
+#        env:     dev
+#        server:
+#            # You can switch on and off the xdebug.
+#            xdebug: true
+#
+#    # Include a MySQL service
+#    mysql:
+#        # If you want to enable this container from outside set the port number.
+#        port:      3312
