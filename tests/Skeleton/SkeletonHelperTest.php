@@ -33,7 +33,7 @@ class SkeletonHelperTest extends TestCase
     {
         return [
             [\Exception::class, 'Exception'],
-            [SkeletonHelper::class, 'AppWebtownWorkflowBundleSkeletonSkeletonHelper'],
+            [SkeletonHelper::class, 'WebtownWorkflowBundleSkeletonSkeletonHelper'],
         ];
     }
 }

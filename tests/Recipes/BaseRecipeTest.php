@@ -93,11 +93,11 @@ class BaseRecipeTest extends TestCase
         $twigLoader = new FilesystemLoader();
         $twigLoader->setPaths(
             [realpath(__DIR__ . '/../Dummy/Recipes/Simple')],
-            'AppWebtownWorkflowBundleTestsDummyRecipesSimpleSimpleRecipe'
+            'WebtownWorkflowBundleTestsDummyRecipesSimpleSimpleRecipe'
         );
         $twigLoader->setPaths(
             [realpath(__DIR__ . '/../Dummy/Recipes/SimpleSkeletonParent')],
-            'AppWebtownWorkflowBundleTestsDummyRecipesSimpleSkeletonParentSimpleSkeletonParent'
+            'WebtownWorkflowBundleTestsDummyRecipesSimpleSkeletonParentSimpleSkeletonParent'
         );
         $recipe = new SimpleRecipe(new Environment($twigLoader), new EventDispatcher());
         SimpleRecipe::setSkeletonParents($parents);

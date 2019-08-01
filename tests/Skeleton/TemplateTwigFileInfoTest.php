@@ -42,23 +42,23 @@ class TemplateTwigFileInfoTest extends TestCase
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 '',
-                'AppWebtownWorkflowBundleTestsResourcesSkeleton',
+                'WebtownWorkflowBundleTestsResourcesSkeleton',
                 null,
-                '@AppWebtownWorkflowBundleTestsResourcesSkeleton/template/template.twig',
+                '@WebtownWorkflowBundleTestsResourcesSkeleton/template/template.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 'Skeleton',
-                'AppWebtownWorkflowBundleTestsResourcesSkeleton',
+                'WebtownWorkflowBundleTestsResourcesSkeleton',
                 null,
-                '@AppWebtownWorkflowBundleTestsResourcesSkeleton/template/Skeleton/template.twig',
+                '@WebtownWorkflowBundleTestsResourcesSkeleton/template/Skeleton/template.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 'Skeleton',
-                'AppWebtownWorkflowBundleTestsResourcesSkeleton',
+                'WebtownWorkflowBundleTestsResourcesSkeleton',
                 'other_template',
-                '@AppWebtownWorkflowBundleTestsResourcesSkeleton/other_template/Skeleton/template.twig',
+                '@WebtownWorkflowBundleTestsResourcesSkeleton/other_template/Skeleton/template.twig',
             ],
         ];
     }

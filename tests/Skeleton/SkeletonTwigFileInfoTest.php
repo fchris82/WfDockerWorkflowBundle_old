@@ -38,14 +38,14 @@ class SkeletonTwigFileInfoTest extends TestCase
             [
                 __DIR__ . '/../Resources/Skeleton/skeleton.twig',
                 '',
-                'AppWebtownWorkflowBundleTestsResourcesSkeleton',
-                '@AppWebtownWorkflowBundleTestsResourcesSkeleton/skeletons/skeleton.twig',
+                'WebtownWorkflowBundleTestsResourcesSkeleton',
+                '@WebtownWorkflowBundleTestsResourcesSkeleton/skeletons/skeleton.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/skeleton.twig',
                 'Skeleton',
-                'AppWebtownWorkflowBundleTestsResourcesSkeleton',
-                '@AppWebtownWorkflowBundleTestsResourcesSkeleton/skeletons/Skeleton/skeleton.twig',
+                'WebtownWorkflowBundleTestsResourcesSkeleton',
+                '@WebtownWorkflowBundleTestsResourcesSkeleton/skeletons/Skeleton/skeleton.twig',
             ],
         ];
     }

@@ -19,7 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Webtown\\Workflow\\": "src/"
+            "Webtown\\WorkflowBundle\\Tests\\": "tests/",
+            "Webtown\\WorkflowBundle\\": "src/"
         }
     },
     "license": "MIT",

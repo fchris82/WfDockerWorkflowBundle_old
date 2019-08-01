@@ -72,9 +72,9 @@ class BuilderTest extends TestCase
         $filesystem = new Filesystem($projectPath, 'alias');
         $recipeManager = new RecipeManager();
         $twigFileLoader = new FilesystemLoader();
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleEventListener', 'AppWebtownWorkflowBundleTestsDummyRecipesSimpleEventListenerSimpleEventListenerRecipe');
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SystemRecipe', 'AppWebtownWorkflowBundleTestsDummyRecipesSystemRecipeSystemRecipe');
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleSkipFile', 'AppWebtownWorkflowBundleTestsDummyRecipesSimpleSkipFileSimpleSkipFileRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleEventListener', 'WebtownWorkflowBundleTestsDummyRecipesSimpleEventListenerSimpleEventListenerRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SystemRecipe', 'WebtownWorkflowBundleTestsDummyRecipesSystemRecipeSystemRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleSkipFile', 'WebtownWorkflowBundleTestsDummyRecipesSimpleSkipFileSimpleSkipFileRecipe');
         $twig = new Environment($twigFileLoader);
         // Build recipes
         foreach ($preSystemRecipes as $recipeName => $configDefinition) {

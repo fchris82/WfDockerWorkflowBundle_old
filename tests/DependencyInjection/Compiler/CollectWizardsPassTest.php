@@ -69,7 +69,7 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(SimpleWizard::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleWizard'),
-                    'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleWizardSimpleWizard',
+                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleWizardSimpleWizard',
                 ]]],
             ],
             // Simple wizard with skeleton, no overridden
@@ -78,7 +78,7 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(SimpleSkeletonWizard::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleSkeletonWizard'),
-                    'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleSkeletonWizardSimpleSkeletonWizard',
+                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleSkeletonWizardSimpleSkeletonWizard',
                 ]]],
             ],
             // Overridden skeletons wizard. There should be 2 twig add path
@@ -87,12 +87,12 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(OverriddenSkeletonWizard::class)]]],
                 [
                     ['addPath', [
-                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard'),
-                        'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
+                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard'),
+                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
                     ]],
                     ['addPath', [
                         realpath(__DIR__ . '/../../Resources/DependencyInjection/OverriddenSkeletonWizard'),
-                        'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
+                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
                     ]],
                 ],
             ],

@@ -69,7 +69,7 @@ class CollectRecipesPassTest extends TestCase
                 [['addRecipe', [new Reference(SimpleRecipe::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleRecipe'),
-                    'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleRecipeSimpleRecipe',
+                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleRecipeSimpleRecipe',
                 ]]],
             ],
             // Abstract recipe, no registered to manager!
@@ -78,7 +78,7 @@ class CollectRecipesPassTest extends TestCase
                 [], // empty!
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/AbstractRecipe'),
-                    'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionAbstractRecipeAbstractRecipe',
+                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionAbstractRecipeAbstractRecipe',
                 ]]],
             ],
             // Overridden skeletons recipe. There should be 2 twig add path
@@ -87,12 +87,12 @@ class CollectRecipesPassTest extends TestCase
                 [['addRecipe', [new Reference(OverriddenSkeletonsRecipe::class)]]],
                 [
                     ['addPath', [
-                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe'),
-                        'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
+                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe'),
+                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
                     ]],
                     ['addPath', [
                         realpath(__DIR__ . '/../../Resources/DependencyInjection/OverriddenRecipe'),
-                        'AppWebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
+                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
                     ]],
                 ],
             ],
