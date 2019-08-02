@@ -1,5 +1,5 @@
 parameters:
-    wf.wizard_user_configuration_file: '/opt/webtown-workflow/host/config/wizards.yml'
+    wf.wizard_user_configuration_file: '/opt/docker-workflow/host/config/wizards.yml'
 
 services:
     _defaults:
