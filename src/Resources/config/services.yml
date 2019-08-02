@@ -1,9 +1,71 @@
+parameters:
+    wf.wizard_user_configuration_file: '/opt/webtown-workflow/host/config/wizards.yml'
+
 services:
     _defaults:
         public: false
 
-    Webtown\WorkflowBundle\Configuration\RecipeManager: ~
+    Webtown\WorkflowBundle\Configuration\RecipeManager:
+        public: true
+    Webtown\WorkflowBundle\Configuration\Environment:
+        public: true
+    Webtown\WorkflowBundle\Wizard\Manager:
+        public: true
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Wizard\\Configuration"
+
+    Webtown\WorkflowBundle\Configuration\Builder:
+        arguments:
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+            - "@Webtown\\WorkflowBundle\\Configuration\\RecipeManager"
+            - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+
+    Webtown\WorkflowBundle\Configuration\Configuration:
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Configuration\\RecipeManager"
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+            - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+
+    Webtown\WorkflowBundle\Environment\Commander:
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
+            - "@Webtown\\WorkflowBundle\\Environment\\WfEnvironmentParser"
+
+    Webtown\WorkflowBundle\Environment\EnvParser: ~
+
+    Webtown\WorkflowBundle\Environment\EzEnvironmentParser:
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
+            - "@Webtown\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
+
+    Webtown\WorkflowBundle\Environment\IoManager: ~
+
+    Webtown\WorkflowBundle\Environment\SymfonyEnvironmentParser:
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
+            - "@Webtown\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
+
+    Webtown\WorkflowBundle\Environment\WfEnvironmentParser:
+        arguments:
+            - "@Webtown\\WorkflowBundle\\Configuration\\Configuration"
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+
+    Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser:
+        arguments:
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+
+    Webtown\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser:
+        arguments:
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+
+    Webtown\WorkflowBundle\Wizard\Configuration:
+        arguments:
+            - "%wf.wizard_user_configuration_file%"
 
     Webtown\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
+        arguments:
+            - "@twig"
+            - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+            - "@Webtown\\WorkflowBundle\\Configuration\\Environment"
         tags:
             - { name: 'kernel.event_listener', event: 'app.configuration.event.register.postbuild', priority: -999 }
