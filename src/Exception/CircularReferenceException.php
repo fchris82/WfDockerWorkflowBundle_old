@@ -6,7 +6,7 @@
  * Time: 13:12
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class CircularReferenceException extends \Exception
 {

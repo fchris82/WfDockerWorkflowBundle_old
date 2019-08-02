@@ -6,11 +6,11 @@
  * Time: 22:26
  */
 
-namespace Webtown\WorkflowBundle\Configuration;
+namespace Docker\WorkflowBundle\Configuration;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use Webtown\WorkflowBundle\Exception\MissingRecipeException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Exception\MissingRecipeException;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class RecipeManager
 {

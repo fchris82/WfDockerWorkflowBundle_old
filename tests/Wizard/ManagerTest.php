@@ -6,17 +6,17 @@
  * Time: 10:18
  */
 
-namespace Webtown\WorkflowBundle\Tests\Wizard;
+namespace Docker\WorkflowBundle\Tests\Wizard;
 
 use PHPUnit\Framework\TestCase;
-use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
-use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
-use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard;
-use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\MissingWizard;
-use Webtown\WorkflowBundle\Wizard\Configuration;
-use Webtown\WorkflowBundle\Wizard\ConfigurationItem;
-use Webtown\WorkflowBundle\Wizard\Manager;
-use Webtown\WorkflowBundle\Wizard\WizardInterface;
+use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
+use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
+use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard;
+use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\MissingWizard;
+use Docker\WorkflowBundle\Wizard\Configuration;
+use Docker\WorkflowBundle\Wizard\ConfigurationItem;
+use Docker\WorkflowBundle\Wizard\Manager;
+use Docker\WorkflowBundle\Wizard\WizardInterface;
 
 class ManagerTest extends TestCase
 {

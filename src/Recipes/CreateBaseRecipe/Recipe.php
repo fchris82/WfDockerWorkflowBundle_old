@@ -6,21 +6,21 @@
  * Time: 13:56
  */
 
-namespace Webtown\WorkflowBundle\Recipes\CreateBaseRecipe;
+namespace Docker\WorkflowBundle\Recipes\CreateBaseRecipe;
 
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment as TwigEnvironment;
-use Webtown\WorkflowBundle\Configuration\Builder;
-use Webtown\WorkflowBundle\Configuration\Environment;
-use Webtown\WorkflowBundle\Event\Configuration\BuildInitEvent;
-use Webtown\WorkflowBundle\Event\ConfigurationEvents;
-use Webtown\WorkflowBundle\Event\RegisterEventListenersInterface;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Webtown\WorkflowBundle\Recipes\SystemRecipe;
-use Webtown\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
+use Docker\WorkflowBundle\Configuration\Builder;
+use Docker\WorkflowBundle\Configuration\Environment;
+use Docker\WorkflowBundle\Event\Configuration\BuildInitEvent;
+use Docker\WorkflowBundle\Event\ConfigurationEvents;
+use Docker\WorkflowBundle\Event\RegisterEventListenersInterface;
+use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Docker\WorkflowBundle\Recipes\SystemRecipe;
+use Docker\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
+use Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
 
 class Recipe extends SystemRecipe implements RegisterEventListenersInterface
 {

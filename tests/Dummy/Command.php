@@ -6,7 +6,7 @@
  * Time: 21:41
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy;
+namespace Docker\WorkflowBundle\Tests\Dummy;
 
 use Symfony\Component\Console\Command\Command as BaseCommand;
 

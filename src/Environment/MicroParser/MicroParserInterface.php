@@ -6,7 +6,7 @@
  * Time: 12:35
  */
 
-namespace Webtown\WorkflowBundle\Environment\MicroParser;
+namespace Docker\WorkflowBundle\Environment\MicroParser;
 
 interface MicroParserInterface
 {

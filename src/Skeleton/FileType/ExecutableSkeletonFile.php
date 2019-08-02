@@ -6,7 +6,7 @@
  * Time: 22:01
  */
 
-namespace Webtown\WorkflowBundle\Skeleton\FileType;
+namespace Docker\WorkflowBundle\Skeleton\FileType;
 
 class ExecutableSkeletonFile extends SkeletonFile
 {

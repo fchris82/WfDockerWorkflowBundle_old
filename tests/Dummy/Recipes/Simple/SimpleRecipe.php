@@ -6,9 +6,9 @@
  * Time: 12:52
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\Simple;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\Simple;
 
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleRecipe extends BaseRecipe
 {

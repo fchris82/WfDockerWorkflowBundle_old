@@ -5038,7 +5038,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Webtown\\DoctrineSchemaUpdateBundle\\": "src"
+                    "Docker\\DoctrineSchemaUpdateBundle\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5101,7 +5101,7 @@
             "version": "v1.4",
             "source": {
                 "type": "git",
-                "url": "git@gitlab.webtown.hu:webtown/WebtownUtilityBundle.git",
+                "url": "git@gitlab.webtown.hu:webtown/DockerUtilityBundle.git",
                 "reference": "6fba4e14f4bf6d5c1e0212a52e72a54bc6e0f563"
             },
             "dist": {
@@ -5129,12 +5129,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Webtown\\UtilityBundle\\": "src"
+                    "Docker\\UtilityBundle\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Webtown\\UtilityBundle\\": "tests"
+                    "Docker\\UtilityBundle\\": "tests"
                 }
             },
             "notification-url": "http://packages.maranhao.webtown.hu/notify.php",

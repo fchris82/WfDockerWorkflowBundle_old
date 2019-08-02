@@ -6,7 +6,7 @@
  * Time: 14:56
  */
 
-namespace Webtown\WorkflowBundle\Wizard;
+namespace Docker\WorkflowBundle\Wizard;
 
 class ConfigurationItem
 {

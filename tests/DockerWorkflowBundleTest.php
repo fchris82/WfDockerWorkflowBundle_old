@@ -6,20 +6,20 @@
  * Time: 17:03
  */
 
-namespace Webtown\WorkflowBundle\Tests;
+namespace Docker\WorkflowBundle\Tests;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\WebtownWorkflowBundle;
-use Webtown\WorkflowBundle\Wizard\WizardInterface;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\DockerWorkflowBundle;
+use Docker\WorkflowBundle\Wizard\WizardInterface;
 
-class WebtownWorkflowBundleTest extends \PHPUnit\Framework\TestCase
+class DockerWorkflowBundleTest extends \PHPUnit\Framework\TestCase
 {
     public function testBuild()
     {
-        $bundle = new WebtownWorkflowBundle();
+        $bundle = new DockerWorkflowBundle();
         $containerBuilder = new ContainerBuilder();
         $bundle->build($containerBuilder);
 

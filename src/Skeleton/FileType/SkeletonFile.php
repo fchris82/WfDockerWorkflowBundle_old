@@ -6,7 +6,7 @@
  * Time: 21:56
  */
 
-namespace Webtown\WorkflowBundle\Skeleton\FileType;
+namespace Docker\WorkflowBundle\Skeleton\FileType;
 
 use Symfony\Component\Finder\SplFileInfo;
 

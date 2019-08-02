@@ -6,10 +6,10 @@
  * Time: 12:52
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\Configurable;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\Configurable;
 
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class ConfigurableRecipe extends BaseRecipe
 {

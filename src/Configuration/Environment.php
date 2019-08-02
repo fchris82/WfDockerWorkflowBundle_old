@@ -6,7 +6,7 @@
  * Time: 21:33
  */
 
-namespace Webtown\WorkflowBundle\Configuration;
+namespace Docker\WorkflowBundle\Configuration;
 
 /**
  * Class Environment

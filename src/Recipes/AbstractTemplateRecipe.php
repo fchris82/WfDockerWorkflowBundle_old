@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Webtown\WorkflowBundle\Recipes;
+namespace Docker\WorkflowBundle\Recipes;
 
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
 
 /**
  * Interface AbstractTemplateRecipe

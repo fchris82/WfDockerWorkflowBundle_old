@@ -6,7 +6,7 @@
  * Time: 12:26
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 use Throwable;
 

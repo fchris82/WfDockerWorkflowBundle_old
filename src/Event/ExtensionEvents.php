@@ -6,7 +6,7 @@
  * Time: 18:25
  */
 
-namespace Webtown\WorkflowBundle\Event;
+namespace Docker\WorkflowBundle\Event;
 
 class ExtensionEvents
 {

@@ -6,7 +6,7 @@
  * Time: 13:28
  */
 
-namespace Webtown\WorkflowBundle\Event\Configuration;
+namespace Docker\WorkflowBundle\Event\Configuration;
 
 use Symfony\Contracts\EventDispatcher\Event;
 

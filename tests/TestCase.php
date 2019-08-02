@@ -6,7 +6,7 @@
  * Time: 10:53
  */
 
-namespace Webtown\WorkflowBundle\Tests;
+namespace Docker\WorkflowBundle\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

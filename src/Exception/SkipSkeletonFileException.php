@@ -6,7 +6,7 @@
  * Time: 10:25
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 /**
  * Class SkipSkeletonFileException

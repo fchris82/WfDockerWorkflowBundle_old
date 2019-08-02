@@ -66,8 +66,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
-            "Webtown\\OneupUploaderExtensionBundle\\Composer\\ScriptHandler::fixUploadsDirectory",
-            "Webtown\\LocalDeployBundle\\Composer\\BinInstallHandler::install"
+            "Docker\\OneupUploaderExtensionBundle\\Composer\\ScriptHandler::fixUploadsDirectory",
+            "Docker\\LocalDeployBundle\\Composer\\BinInstallHandler::install"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -77,8 +77,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
-            "Webtown\\OneupUploaderExtensionBundle\\Composer\\ScriptHandler::fixUploadsDirectory",
-            "Webtown\\LocalDeployBundle\\Composer\\BinInstallHandler::install"
+            "Docker\\OneupUploaderExtensionBundle\\Composer\\ScriptHandler::fixUploadsDirectory",
+            "Docker\\LocalDeployBundle\\Composer\\BinInstallHandler::install"
         ]
     },
     "config": {

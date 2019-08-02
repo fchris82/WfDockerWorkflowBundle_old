@@ -1,4 +1,4 @@
-# Class: Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile
+# Class: Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile
 # HandleExisting: 0
 PROJECT_WORKING_DIRECTORY := $${PWD}
 WF_TARGET_DIRECTORY := .wf

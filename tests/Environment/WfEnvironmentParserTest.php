@@ -6,15 +6,15 @@
  * Time: 15:23
  */
 
-namespace Webtown\WorkflowBundle\Tests\Environment;
+namespace Docker\WorkflowBundle\Tests\Environment;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Webtown\WorkflowBundle\Configuration\Configuration;
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
+use Docker\WorkflowBundle\Configuration\Configuration;
+use Docker\WorkflowBundle\Configuration\RecipeManager;
+use Docker\WorkflowBundle\Environment\WfEnvironmentParser;
+use Docker\WorkflowBundle\Test\Dummy\Filesystem;
 
 class WfEnvironmentParserTest extends TestCase
 {

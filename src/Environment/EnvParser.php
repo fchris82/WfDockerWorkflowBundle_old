@@ -6,7 +6,7 @@
  * Time: 13:11
  */
 
-namespace Webtown\WorkflowBundle\Environment;
+namespace Docker\WorkflowBundle\Environment;
 
 class EnvParser
 {

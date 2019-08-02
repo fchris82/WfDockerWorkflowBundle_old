@@ -6,11 +6,11 @@
  * Time: 14:33
  */
 
-namespace Webtown\WorkflowBundle\Tests\Skeleton;
+namespace Docker\WorkflowBundle\Tests\Skeleton;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
-use Webtown\WorkflowBundle\Skeleton\TemplateTwigFileInfo;
+use Docker\WorkflowBundle\Skeleton\TemplateTwigFileInfo;
 
 class TemplateTwigFileInfoTest extends TestCase
 {
@@ -42,23 +42,23 @@ class TemplateTwigFileInfoTest extends TestCase
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 '',
-                'WebtownWorkflowBundleTestsResourcesSkeleton',
+                'DockerWorkflowBundleTestsResourcesSkeleton',
                 null,
-                '@WebtownWorkflowBundleTestsResourcesSkeleton/template/template.twig',
+                '@DockerWorkflowBundleTestsResourcesSkeleton/template/template.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 'Skeleton',
-                'WebtownWorkflowBundleTestsResourcesSkeleton',
+                'DockerWorkflowBundleTestsResourcesSkeleton',
                 null,
-                '@WebtownWorkflowBundleTestsResourcesSkeleton/template/Skeleton/template.twig',
+                '@DockerWorkflowBundleTestsResourcesSkeleton/template/Skeleton/template.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/template.twig',
                 'Skeleton',
-                'WebtownWorkflowBundleTestsResourcesSkeleton',
+                'DockerWorkflowBundleTestsResourcesSkeleton',
                 'other_template',
-                '@WebtownWorkflowBundleTestsResourcesSkeleton/other_template/Skeleton/template.twig',
+                '@DockerWorkflowBundleTestsResourcesSkeleton/other_template/Skeleton/template.twig',
             ],
         ];
     }

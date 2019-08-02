@@ -6,10 +6,10 @@
  * Time: 17:08
  */
 
-namespace Webtown\WorkflowBundle\Recipes;
+namespace Docker\WorkflowBundle\Recipes;
 
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
-use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
+use Docker\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
 
 abstract class HiddenRecipe extends BaseRecipe
 {

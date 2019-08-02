@@ -6,11 +6,11 @@
  * Time: 14:17
  */
 
-namespace Webtown\WorkflowBundle\Tests\Skeleton;
+namespace Docker\WorkflowBundle\Tests\Skeleton;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
-use Webtown\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
+use Docker\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 
 class SkeletonTwigFileInfoTest extends TestCase
 {
@@ -38,14 +38,14 @@ class SkeletonTwigFileInfoTest extends TestCase
             [
                 __DIR__ . '/../Resources/Skeleton/skeleton.twig',
                 '',
-                'WebtownWorkflowBundleTestsResourcesSkeleton',
-                '@WebtownWorkflowBundleTestsResourcesSkeleton/skeletons/skeleton.twig',
+                'DockerWorkflowBundleTestsResourcesSkeleton',
+                '@DockerWorkflowBundleTestsResourcesSkeleton/skeletons/skeleton.twig',
             ],
             [
                 __DIR__ . '/../Resources/Skeleton/skeleton.twig',
                 'Skeleton',
-                'WebtownWorkflowBundleTestsResourcesSkeleton',
-                '@WebtownWorkflowBundleTestsResourcesSkeleton/skeletons/Skeleton/skeleton.twig',
+                'DockerWorkflowBundleTestsResourcesSkeleton',
+                '@DockerWorkflowBundleTestsResourcesSkeleton/skeletons/Skeleton/skeleton.twig',
             ],
         ];
     }

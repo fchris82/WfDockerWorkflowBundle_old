@@ -6,10 +6,10 @@
  * Time: 16:55
  */
 
-namespace Webtown\WorkflowBundle\Tests\Twig\Extension;
+namespace Docker\WorkflowBundle\Tests\Twig\Extension;
 
 use PHPUnit\Framework\TestCase;
-use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
+use Docker\WorkflowBundle\Twig\Extension\TextExtension;
 
 class TextExtensionTest extends TestCase
 {

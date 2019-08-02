@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Webtown\WorkflowBundle;
+namespace Docker\WorkflowBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\Wizard\WizardInterface;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Wizard\WizardInterface;
 
-class WebtownWorkflowBundle extends Bundle
+class DockerWorkflowBundle extends Bundle
 {
     const RECIPE_TAG = 'wf.recipe';
     const WIZARD_TAG = 'wf.wizard';

@@ -6,11 +6,11 @@
  * Time: 20:07
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy;
+namespace Docker\WorkflowBundle\Tests\Dummy;
 
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Webtown\WorkflowBundle\Tests\TestCase;
+use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Docker\WorkflowBundle\Tests\TestCase;
 
 class FilesystemTest extends TestCase
 {

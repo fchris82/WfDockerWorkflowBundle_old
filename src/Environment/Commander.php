@@ -6,9 +6,9 @@
  * Time: 16:48
  */
 
-namespace Webtown\WorkflowBundle\Environment;
+namespace Docker\WorkflowBundle\Environment;
 
-use Webtown\WorkflowBundle\Exception\CommanderRunException;
+use Docker\WorkflowBundle\Exception\CommanderRunException;
 
 class Commander
 {

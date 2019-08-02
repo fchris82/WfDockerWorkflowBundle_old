@@ -6,12 +6,12 @@
  * Time: 12:18
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile;
 
 use Symfony\Component\Finder\SplFileInfo;
-use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Exception\SkipSkeletonFileException;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class SimpleSkipFileRecipe extends BaseRecipe
 {

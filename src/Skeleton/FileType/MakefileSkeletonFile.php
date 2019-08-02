@@ -6,7 +6,7 @@
  * Time: 22:00
  */
 
-namespace Webtown\WorkflowBundle\Skeleton\FileType;
+namespace Docker\WorkflowBundle\Skeleton\FileType;
 
 class MakefileSkeletonFile extends SkeletonFile
 {

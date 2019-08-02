@@ -6,7 +6,7 @@
  * Time: 21:34
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy;
+namespace Docker\WorkflowBundle\Tests\Dummy;
 
 use Symfony\Component\Console\Helper\QuestionHelper as BaseQuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;

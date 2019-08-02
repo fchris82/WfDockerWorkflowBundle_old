@@ -6,9 +6,9 @@
  * Time: 15:30
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
-use Webtown\WorkflowBundle\Wizards\BaseWizard;
+use Docker\WorkflowBundle\Wizards\BaseWizard;
 
 class WizardWfIsRequiredException extends WizardSomethingIsRequiredException
 {

@@ -6,15 +6,15 @@
  * Time: 14:10
  */
 
-namespace Webtown\WorkflowBundle\Tests\Exception;
+namespace Docker\WorkflowBundle\Tests\Exception;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Exception\WizardWfIsRequiredException;
-use Webtown\WorkflowBundle\Wizards\BaseWizard;
+use Docker\WorkflowBundle\Environment\Commander;
+use Docker\WorkflowBundle\Environment\IoManager;
+use Docker\WorkflowBundle\Exception\WizardWfIsRequiredException;
+use Docker\WorkflowBundle\Wizards\BaseWizard;
 
 class WizardWfIsRequiredExceptionTest extends TestCase
 {
@@ -42,14 +42,14 @@ class WizardWfIsRequiredExceptionTest extends TestCase
 
     public function dp__construct(): array
     {
-        $baseWizard = new \Webtown\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard(
+        $baseWizard = new \Docker\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard(
             m::mock(IoManager::class),
             m::mock(Commander::class),
             new EventDispatcher()
         );
 
         return [
-            [clone $baseWizard, 'test', '', 'The `Webtown\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard` wizard needs initialized and configured WF! (Target path: `test`)'],
+            [clone $baseWizard, 'test', '', 'The `Docker\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard` wizard needs initialized and configured WF! (Target path: `test`)'],
             [clone $baseWizard, __DIR__, 'TEST: Something went wrong', 'TEST: Something went wrong'],
         ];
     }

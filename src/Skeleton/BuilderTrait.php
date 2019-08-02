@@ -6,16 +6,16 @@
  * Time: 11:25
  */
 
-namespace Webtown\WorkflowBundle\Skeleton;
+namespace Docker\WorkflowBundle\Skeleton;
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Filesystem\Filesystem;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
-use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Docker\WorkflowBundle\Exception\SkipSkeletonFileException;
+use Docker\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 trait BuilderTrait
 {

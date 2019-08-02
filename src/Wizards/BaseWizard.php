@@ -6,17 +6,17 @@
  * Time: 15:54.
  */
 
-namespace Webtown\WorkflowBundle\Wizards;
+namespace Docker\WorkflowBundle\Wizards;
 
 use Symfony\Component\Console\Question\Question;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
-use Webtown\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
-use Webtown\WorkflowBundle\Wizard\WizardInterface;
+use Docker\WorkflowBundle\Environment\Commander;
+use Docker\WorkflowBundle\Environment\IoManager;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
+use Docker\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
+use Docker\WorkflowBundle\Wizard\WizardInterface;
 
 /**
  * Class BaseSkeleton.

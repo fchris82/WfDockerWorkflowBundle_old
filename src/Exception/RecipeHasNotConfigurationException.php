@@ -6,7 +6,7 @@
  * Time: 12:00
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class RecipeHasNotConfigurationException extends \Exception
 {

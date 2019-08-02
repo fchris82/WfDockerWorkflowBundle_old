@@ -6,11 +6,11 @@
  * Time: 17:22
  */
 
-namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
+namespace Docker\WorkflowBundle\Event\SkeletonBuild;
 
 use Symfony\Component\Finder\SplFileInfo;
-use Webtown\WorkflowBundle\Event\NamespacedEvent;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Event\NamespacedEvent;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class PreBuildSkeletonFileEvent extends NamespacedEvent
 {

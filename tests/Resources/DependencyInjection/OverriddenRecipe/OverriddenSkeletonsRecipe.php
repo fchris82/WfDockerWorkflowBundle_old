@@ -6,9 +6,9 @@
  * Time: 10:57
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenRecipe;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenRecipe;
 
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class OverriddenSkeletonsRecipe extends BaseRecipe
 {

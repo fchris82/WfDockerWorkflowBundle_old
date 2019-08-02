@@ -6,10 +6,10 @@
  * Time: 12:08
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe;
 
-use Webtown\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class AbstractRecipe extends BaseRecipe implements AbstractTemplateRecipe
 {

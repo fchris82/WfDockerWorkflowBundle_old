@@ -6,7 +6,7 @@
  * Time: 21:33
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 /**
  * Class InvalidWfVersionException

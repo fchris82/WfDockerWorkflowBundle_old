@@ -6,13 +6,13 @@
  * Time: 17:12
  */
 
-namespace Webtown\WorkflowBundle\Event;
+namespace Docker\WorkflowBundle\Event;
 
-use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
 
 class SkeletonBuildBaseEvents
 {

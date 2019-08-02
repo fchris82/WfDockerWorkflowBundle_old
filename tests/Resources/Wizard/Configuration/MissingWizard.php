@@ -6,10 +6,10 @@
  * Time: 12:59
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration;
+namespace Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration;
 
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Wizards\BaseWizard;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Wizards\BaseWizard;
 
 class MissingWizard extends BaseWizard
 {

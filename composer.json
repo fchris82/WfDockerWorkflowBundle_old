@@ -1,6 +1,13 @@
 {
-    "name": "webtown/workflow-bundle",
+    "name": "docker/workflow-bundle",
     "description": "Base Workflow Bundle for recipes and wizards",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krisztián Ferenczi",
+            "email": "ferenczi.krisztian@gmail.com"
+        }
+    ],
     "type": "symfony-bundle",
     "require": {
         "php": "^7.3",
@@ -19,15 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Webtown\\WorkflowBundle\\Tests\\": "tests/",
-            "Webtown\\WorkflowBundle\\": "src/"
+            "Docker\\WorkflowBundle\\Tests\\": "tests/",
+            "Docker\\WorkflowBundle\\": "src/"
         }
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Krisztián Ferenczi",
-            "email": "ferenczi.krisztian@gmail.com"
-        }
-    ]
+    }
 }

@@ -6,7 +6,7 @@
  * Time: 9:54
  */
 
-namespace Webtown\WorkflowBundle\Tests\Configuration;
+namespace Docker\WorkflowBundle\Tests\Configuration;
 
 use Mockery as m;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -16,17 +16,17 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Webtown\WorkflowBundle\Configuration\Configuration;
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\Exception\InvalidWfVersionException;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe\SystemWithoutConfigurationRecipe;
-use Webtown\WorkflowBundle\Tests\TestCase;
+use Docker\WorkflowBundle\Configuration\Configuration;
+use Docker\WorkflowBundle\Configuration\RecipeManager;
+use Docker\WorkflowBundle\Exception\InvalidWfVersionException;
+use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe\SystemWithoutConfigurationRecipe;
+use Docker\WorkflowBundle\Tests\TestCase;
 
 class ConfigurationTest extends TestCase
 {
@@ -134,7 +134,7 @@ class ConfigurationTest extends TestCase
      * @param string          $file
      * @param bool|\Exception $exception
      *
-     * @throws \Webtown\WorkflowBundle\Exception\InvalidWfVersionException
+     * @throws \Docker\WorkflowBundle\Exception\InvalidWfVersionException
      * @throws \Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException
      *
      * @dataProvider dpLoadConfig

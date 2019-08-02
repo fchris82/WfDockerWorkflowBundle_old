@@ -6,10 +6,10 @@
  * Time: 19:20
  */
 
-namespace Webtown\WorkflowBundle\Event\Configuration;
+namespace Docker\WorkflowBundle\Event\Configuration;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class RegisterEvent extends Event
 {

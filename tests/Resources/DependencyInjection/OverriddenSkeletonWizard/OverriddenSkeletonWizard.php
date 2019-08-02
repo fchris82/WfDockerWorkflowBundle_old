@@ -6,10 +6,10 @@
  * Time: 12:15
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenSkeletonWizard;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenSkeletonWizard;
 
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Wizards\BaseSkeletonWizard;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Wizards\BaseSkeletonWizard;
 
 class OverriddenSkeletonWizard extends BaseSkeletonWizard
 {

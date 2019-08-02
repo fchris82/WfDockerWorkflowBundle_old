@@ -6,12 +6,12 @@
  * Time: 22:23
  */
 
-namespace Webtown\WorkflowBundle\Event;
+namespace Docker\WorkflowBundle\Event;
 
-use Webtown\WorkflowBundle\Event\Configuration\BuildInitEvent;
-use Webtown\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
-use Webtown\WorkflowBundle\Event\Configuration\RegisterEvent;
-use Webtown\WorkflowBundle\Event\Configuration\VerboseInfoEvent;
+use Docker\WorkflowBundle\Event\Configuration\BuildInitEvent;
+use Docker\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
+use Docker\WorkflowBundle\Event\Configuration\RegisterEvent;
+use Docker\WorkflowBundle\Event\Configuration\VerboseInfoEvent;
 
 class ConfigurationEvents
 {

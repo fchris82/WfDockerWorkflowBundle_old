@@ -6,7 +6,7 @@
  * Time: 12:54
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class ValueIsMissingException extends \Exception
 {

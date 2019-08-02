@@ -6,10 +6,10 @@
  * Time: 15:21
  */
 
-namespace Webtown\WorkflowBundle\Environment;
+namespace Docker\WorkflowBundle\Environment;
 
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
 
 class EzEnvironmentParser extends SymfonyEnvironmentParser
 {

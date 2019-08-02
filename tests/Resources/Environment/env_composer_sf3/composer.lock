@@ -5170,7 +5170,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "WebtownPHP\\Bundle\\FineDiffBundle\\": ""
+                    "DockerPHP\\Bundle\\FineDiffBundle\\": ""
                 }
             },
             "license": [
@@ -5193,7 +5193,7 @@
             "version": "1.2",
             "source": {
                 "type": "git",
-                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/WebtownSwiftMailerTwigBundle.git",
+                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/DockerSwiftMailerTwigBundle.git",
                 "reference": "d67e9aa9f73153666d638199bef5798dd89e8c00"
             },
             "dist": {
@@ -5223,12 +5223,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Webtown\\SwiftMailerTwigBundle\\": "src"
+                    "Docker\\SwiftMailerTwigBundle\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Webtown\\SwiftMailerTwigBundle\\": "tests"
+                    "Docker\\SwiftMailerTwigBundle\\": "tests"
                 }
             },
             "notification-url": "http://packages.amapa.webtown.hu/notify.php",
@@ -5248,7 +5248,7 @@
             "version": "v1.4",
             "source": {
                 "type": "git",
-                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/WebtownUtilityBundle.git",
+                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/DockerUtilityBundle.git",
                 "reference": "6fba4e14f4bf6d5c1e0212a52e72a54bc6e0f563"
             },
             "dist": {
@@ -5276,12 +5276,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Webtown\\UtilityBundle\\": "src"
+                    "Docker\\UtilityBundle\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Webtown\\UtilityBundle\\": "tests"
+                    "Docker\\UtilityBundle\\": "tests"
                 }
             },
             "notification-url": "http://packages.maranhao.webtown.hu/notify.php",
@@ -7535,7 +7535,7 @@
             "version": "v1.0",
             "source": {
                 "type": "git",
-                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/WebtownTestingBundle.git",
+                "url": "https://php-read:pcvA1jjLK5yuId5NGi2r@gitlab.webtown.hu/webtown/DockerTestingBundle.git",
                 "reference": "a8ea7ba0fb4507a2c3e067cfa48ae96487a83a64"
             },
             "dist": {
@@ -7561,12 +7561,12 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Webtown\\TestingBundle\\": "src"
+                    "Docker\\TestingBundle\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Webtown\\TestingBundle\\": "tests"
+                    "Docker\\TestingBundle\\": "tests"
                 }
             },
             "notification-url": "http://packages.amapa.webtown.hu/notify.php",

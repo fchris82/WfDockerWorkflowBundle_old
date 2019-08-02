@@ -6,7 +6,7 @@
  * Time: 10:59
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleRecipe;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleRecipe;
 
 class SimpleRecipe
 {

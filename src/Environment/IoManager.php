@@ -6,7 +6,7 @@
  * Time: 15:30
  */
 
-namespace Webtown\WorkflowBundle\Environment;
+namespace Docker\WorkflowBundle\Environment;
 
 use Symfony\Component\Console\ConsoleEvents;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;

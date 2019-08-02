@@ -6,24 +6,24 @@
  * Time: 15:54.
  */
 
-namespace Webtown\WorkflowBundle\Wizards;
+namespace Docker\WorkflowBundle\Wizards;
 
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
-use Webtown\WorkflowBundle\Skeleton\BuilderTrait;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\SkeletonManagerTrait;
+use Docker\WorkflowBundle\Environment\Commander;
+use Docker\WorkflowBundle\Environment\IoManager;
+use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
+use Docker\WorkflowBundle\Skeleton\BuilderTrait;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Skeleton\SkeletonManagerTrait;
 
 /**
  * Class BaseSkeleton.

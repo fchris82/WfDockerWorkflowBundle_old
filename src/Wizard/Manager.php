@@ -6,7 +6,7 @@
  * Time: 16:05.
  */
 
-namespace Webtown\WorkflowBundle\Wizard;
+namespace Docker\WorkflowBundle\Wizard;
 
 /**
  * Class Manager.

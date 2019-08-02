@@ -6,10 +6,10 @@
  * Time: 12:06
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleSkeletonWizard;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleSkeletonWizard;
 
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Wizards\BaseSkeletonWizard;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Wizards\BaseSkeletonWizard;
 
 class SimpleSkeletonWizard extends BaseSkeletonWizard
 {

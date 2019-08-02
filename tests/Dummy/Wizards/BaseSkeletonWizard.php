@@ -6,11 +6,11 @@
  * Time: 14:07
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Wizards;
+namespace Docker\WorkflowBundle\Tests\Dummy\Wizards;
 
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
 
-class BaseSkeletonWizard extends \Webtown\WorkflowBundle\Wizards\BaseSkeletonWizard
+class BaseSkeletonWizard extends \Docker\WorkflowBundle\Wizards\BaseSkeletonWizard
 {
     /**
      * @var BuildWizardEvent

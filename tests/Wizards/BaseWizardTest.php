@@ -6,18 +6,18 @@
  * Time: 10:26
  */
 
-namespace Webtown\WorkflowBundle\Tests\Wizards;
+namespace Docker\WorkflowBundle\Tests\Wizards;
 
 use Mockery as m;
 use Symfony\Component\Console\Question\Question;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
-use Webtown\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
-use Webtown\WorkflowBundle\Tests\Dummy\Environment\IoManager as IoManagerDummy;
-use Webtown\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard;
-use Webtown\WorkflowBundle\Tests\TestCase;
+use Docker\WorkflowBundle\Environment\Commander;
+use Docker\WorkflowBundle\Environment\IoManager;
+use Docker\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
+use Docker\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
+use Docker\WorkflowBundle\Tests\Dummy\Environment\IoManager as IoManagerDummy;
+use Docker\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard;
+use Docker\WorkflowBundle\Tests\TestCase;
 
 class BaseWizardTest extends TestCase
 {
@@ -35,7 +35,7 @@ class BaseWizardTest extends TestCase
         );
         $targetProjectDirectory = __DIR__;
 
-        $this->assertEquals('Webtown\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard', $baseWizard->getDefaultName());
+        $this->assertEquals('Docker\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard', $baseWizard->getDefaultName());
         $this->assertEquals('', $baseWizard->getDefaultGroup());
         $this->assertEquals('', $baseWizard->getInfo());
         $this->assertFalse($baseWizard->isHidden());

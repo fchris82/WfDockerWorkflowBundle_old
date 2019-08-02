@@ -6,10 +6,10 @@
  * Time: 17:08
  */
 
-namespace Webtown\WorkflowBundle\Recipes;
+namespace Docker\WorkflowBundle\Recipes;
 
-use Webtown\WorkflowBundle\Event\Configuration\RegisterEvent;
-use Webtown\WorkflowBundle\Event\ConfigurationEvents;
+use Docker\WorkflowBundle\Event\Configuration\RegisterEvent;
+use Docker\WorkflowBundle\Event\ConfigurationEvents;
 
 abstract class SystemRecipe extends HiddenRecipe
 {

@@ -6,10 +6,10 @@
  * Time: 12:18
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip;
 
-use Webtown\WorkflowBundle\Exception\SkipRecipeException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Exception\SkipRecipeException;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleSkipRecipe extends BaseRecipe
 {

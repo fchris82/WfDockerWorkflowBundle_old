@@ -6,7 +6,7 @@
  * Time: 17:10
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class MissingRecipeException extends \Exception
 {

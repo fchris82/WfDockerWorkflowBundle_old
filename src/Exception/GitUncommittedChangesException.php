@@ -6,7 +6,7 @@
  * Time: 13:53.
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 /**
  * Class GitUncommittedChangesException.

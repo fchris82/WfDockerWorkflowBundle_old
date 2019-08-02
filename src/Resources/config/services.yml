@@ -5,67 +5,67 @@ services:
     _defaults:
         public: false
 
-    Webtown\WorkflowBundle\Configuration\RecipeManager:
+    Docker\WorkflowBundle\Configuration\RecipeManager:
         public: true
-    Webtown\WorkflowBundle\Configuration\Environment:
+    Docker\WorkflowBundle\Configuration\Environment:
         public: true
-    Webtown\WorkflowBundle\Wizard\Manager:
+    Docker\WorkflowBundle\Wizard\Manager:
         public: true
         arguments:
-            - "@Webtown\\WorkflowBundle\\Wizard\\Configuration"
+            - "@Docker\\WorkflowBundle\\Wizard\\Configuration"
 
-    Webtown\WorkflowBundle\Configuration\Builder:
+    Docker\WorkflowBundle\Configuration\Builder:
         arguments:
             - "@Symfony\\Component\\Filesystem\\Filesystem"
-            - "@Webtown\\WorkflowBundle\\Configuration\\RecipeManager"
+            - "@Docker\\WorkflowBundle\\Configuration\\RecipeManager"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
 
-    Webtown\WorkflowBundle\Configuration\Configuration:
+    Docker\WorkflowBundle\Configuration\Configuration:
         arguments:
-            - "@Webtown\\WorkflowBundle\\Configuration\\RecipeManager"
+            - "@Docker\\WorkflowBundle\\Configuration\\RecipeManager"
             - "@Symfony\\Component\\Filesystem\\Filesystem"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
 
-    Webtown\WorkflowBundle\Environment\Commander:
+    Docker\WorkflowBundle\Environment\Commander:
         arguments:
-            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
-            - "@Webtown\\WorkflowBundle\\Environment\\WfEnvironmentParser"
+            - "@Docker\\WorkflowBundle\\Environment\\IoManager"
+            - "@Docker\\WorkflowBundle\\Environment\\WfEnvironmentParser"
 
-    Webtown\WorkflowBundle\Environment\EnvParser: ~
+    Docker\WorkflowBundle\Environment\EnvParser: ~
 
-    Webtown\WorkflowBundle\Environment\EzEnvironmentParser:
+    Docker\WorkflowBundle\Environment\EzEnvironmentParser:
         arguments:
-            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
-            - "@Webtown\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
+            - "@Docker\\WorkflowBundle\\Environment\\IoManager"
+            - "@Docker\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
 
-    Webtown\WorkflowBundle\Environment\IoManager: ~
+    Docker\WorkflowBundle\Environment\IoManager: ~
 
-    Webtown\WorkflowBundle\Environment\SymfonyEnvironmentParser:
+    Docker\WorkflowBundle\Environment\SymfonyEnvironmentParser:
         arguments:
-            - "@Webtown\\WorkflowBundle\\Environment\\IoManager"
-            - "@Webtown\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
+            - "@Docker\\WorkflowBundle\\Environment\\IoManager"
+            - "@Docker\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
 
-    Webtown\WorkflowBundle\Environment\WfEnvironmentParser:
+    Docker\WorkflowBundle\Environment\WfEnvironmentParser:
         arguments:
-            - "@Webtown\\WorkflowBundle\\Configuration\\Configuration"
+            - "@Docker\\WorkflowBundle\\Configuration\\Configuration"
             - "@Symfony\\Component\\Filesystem\\Filesystem"
 
-    Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser:
-        arguments:
-            - "@Symfony\\Component\\Filesystem\\Filesystem"
-
-    Webtown\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser:
+    Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser:
         arguments:
             - "@Symfony\\Component\\Filesystem\\Filesystem"
 
-    Webtown\WorkflowBundle\Wizard\Configuration:
+    Docker\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser:
+        arguments:
+            - "@Symfony\\Component\\Filesystem\\Filesystem"
+
+    Docker\WorkflowBundle\Wizard\Configuration:
         arguments:
             - "%wf.wizard_user_configuration_file%"
 
-    Webtown\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
+    Docker\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
         arguments:
             - "@twig"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
-            - "@Webtown\\WorkflowBundle\\Configuration\\Environment"
+            - "@Docker\\WorkflowBundle\\Configuration\\Environment"
         tags:
             - { name: 'kernel.event_listener', event: 'wf.configuration.event.register.postbuild', priority: -999 }

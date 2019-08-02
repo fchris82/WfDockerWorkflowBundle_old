@@ -6,20 +6,20 @@
  * Time: 11:23
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener;
 
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Webtown\WorkflowBundle\Event\RegisterEventListenersInterface;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
-use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
-use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Event\RegisterEventListenersInterface;
+use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
+use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Docker\WorkflowBundle\Exception\SkipSkeletonFileException;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\HiddenRecipe;
+use Docker\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 /**
  * The recipe as an event listener too.

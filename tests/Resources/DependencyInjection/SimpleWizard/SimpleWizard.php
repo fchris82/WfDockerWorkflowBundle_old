@@ -6,10 +6,10 @@
  * Time: 12:06
  */
 
-namespace Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard;
+namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard;
 
-use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Webtown\WorkflowBundle\Wizards\BaseWizard;
+use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Docker\WorkflowBundle\Wizards\BaseWizard;
 
 class SimpleWizard extends BaseWizard
 {

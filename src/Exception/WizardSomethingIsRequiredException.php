@@ -6,7 +6,7 @@
  * Time: 12:14
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class WizardSomethingIsRequiredException extends \Exception
 {

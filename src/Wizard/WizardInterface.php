@@ -6,7 +6,7 @@
  * Time: 15:54.
  */
 
-namespace Webtown\WorkflowBundle\Wizard;
+namespace Docker\WorkflowBundle\Wizard;
 
 interface WizardInterface
 {

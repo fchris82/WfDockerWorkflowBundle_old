@@ -6,14 +6,14 @@
  * Time: 13:39
  */
 
-namespace Webtown\WorkflowBundle\Tests;
+namespace Docker\WorkflowBundle\Tests;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Skeleton\SkeletonHelper;
 
 class SkeletonTestCase extends TestCase
 {

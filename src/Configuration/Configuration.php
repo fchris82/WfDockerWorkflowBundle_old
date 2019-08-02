@@ -6,7 +6,7 @@
  * Time: 16:57
  */
 
-namespace Webtown\WorkflowBundle\Configuration;
+namespace Docker\WorkflowBundle\Configuration;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -18,13 +18,13 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Yaml\Parser;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Webtown\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
-use Webtown\WorkflowBundle\Event\ConfigurationEvents;
-use Webtown\WorkflowBundle\Exception\InvalidWfVersionException;
-use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
-use Webtown\WorkflowBundle\Recipes\SystemRecipe;
+use Docker\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
+use Docker\WorkflowBundle\Event\ConfigurationEvents;
+use Docker\WorkflowBundle\Exception\InvalidWfVersionException;
+use Docker\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\HiddenRecipe;
+use Docker\WorkflowBundle\Recipes\SystemRecipe;
 
 class Configuration implements ConfigurationInterface
 {

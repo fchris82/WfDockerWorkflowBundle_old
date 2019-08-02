@@ -6,7 +6,7 @@
  * Time: 15:35
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 class ConfigurationItemNotFoundException extends \Exception
 {

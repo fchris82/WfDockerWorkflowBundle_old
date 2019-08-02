@@ -6,11 +6,11 @@
  * Time: 12:34
  */
 
-namespace Webtown\WorkflowBundle\Environment;
+namespace Docker\WorkflowBundle\Environment;
 
 use Symfony\Component\Console\Question\ChoiceQuestion;
-use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
 
 class SymfonyEnvironmentParser
 {

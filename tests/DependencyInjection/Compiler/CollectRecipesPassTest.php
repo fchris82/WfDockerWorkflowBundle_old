@@ -6,7 +6,7 @@
  * Time: 14:04
  */
 
-namespace Webtown\WorkflowBundle\Tests\DependencyInjection\Compiler;
+namespace Docker\WorkflowBundle\Tests\DependencyInjection\Compiler;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,13 +14,13 @@ use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\Reference;
 use Twig\Loader\FilesystemLoader;
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
-use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
-use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe\AbstractRecipe;
-use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenRecipe\OverriddenSkeletonsRecipe;
-use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleRecipe\SimpleRecipe;
-use Webtown\WorkflowBundle\WebtownWorkflowBundle;
+use Docker\WorkflowBundle\Configuration\RecipeManager;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
+use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe\AbstractRecipe;
+use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenRecipe\OverriddenSkeletonsRecipe;
+use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleRecipe\SimpleRecipe;
+use Docker\WorkflowBundle\DockerWorkflowBundle;
 
 class CollectRecipesPassTest extends TestCase
 {
@@ -47,7 +47,7 @@ class CollectRecipesPassTest extends TestCase
 
         foreach ($recipes as $recipeClass) {
             $recipeDefinition = new Definition($recipeClass);
-            $recipeDefinition->addTag(WebtownWorkflowBundle::RECIPE_TAG);
+            $recipeDefinition->addTag(DockerWorkflowBundle::RECIPE_TAG);
             $containerBuilder->setDefinition($recipeClass, $recipeDefinition);
         }
 
@@ -69,7 +69,7 @@ class CollectRecipesPassTest extends TestCase
                 [['addRecipe', [new Reference(SimpleRecipe::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleRecipe'),
-                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionSimpleRecipeSimpleRecipe',
+                    'DockerWorkflowBundleTestsResourcesDependencyInjectionSimpleRecipeSimpleRecipe',
                 ]]],
             ],
             // Abstract recipe, no registered to manager!
@@ -78,7 +78,7 @@ class CollectRecipesPassTest extends TestCase
                 [], // empty!
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/AbstractRecipe'),
-                    'WebtownWorkflowBundleTestsResourcesDependencyInjectionAbstractRecipeAbstractRecipe',
+                    'DockerWorkflowBundleTestsResourcesDependencyInjectionAbstractRecipeAbstractRecipe',
                 ]]],
             ],
             // Overridden skeletons recipe. There should be 2 twig add path
@@ -87,12 +87,12 @@ class CollectRecipesPassTest extends TestCase
                 [['addRecipe', [new Reference(OverriddenSkeletonsRecipe::class)]]],
                 [
                     ['addPath', [
-                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe'),
-                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
+                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe'),
+                        'DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
                     ]],
                     ['addPath', [
                         realpath(__DIR__ . '/../../Resources/DependencyInjection/OverriddenRecipe'),
-                        'WebtownWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
+                        'DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenRecipeOverriddenSkeletonsRecipe',
                     ]],
                 ],
             ],

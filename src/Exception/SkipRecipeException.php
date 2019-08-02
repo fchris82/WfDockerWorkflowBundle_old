@@ -6,7 +6,7 @@
  * Time: 11:38
  */
 
-namespace Webtown\WorkflowBundle\Exception;
+namespace Docker\WorkflowBundle\Exception;
 
 /**
  * Class SkipRecipeException

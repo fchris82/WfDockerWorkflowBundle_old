@@ -6,10 +6,10 @@
  * Time: 16:35
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent;
 
-use Webtown\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Docker\WorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Docker\WorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleSkeletonParent extends BaseRecipe implements AbstractTemplateRecipe
 {

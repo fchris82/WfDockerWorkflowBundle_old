@@ -6,10 +6,10 @@
  * Time: 13:02
  */
 
-namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
+namespace Docker\WorkflowBundle\Event\SkeletonBuild;
 
-use Webtown\WorkflowBundle\Event\NamespacedEvent;
-use Webtown\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
+use Docker\WorkflowBundle\Event\NamespacedEvent;
+use Docker\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 
 class PreBuildSkeletonFilesEvent extends NamespacedEvent
 {

@@ -6,13 +6,13 @@
  * Time: 13:47
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe;
+namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe;
 
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
 
-class SystemRecipe extends \Webtown\WorkflowBundle\Recipes\SystemRecipe
+class SystemRecipe extends \Docker\WorkflowBundle\Recipes\SystemRecipe
 {
     /**
      * @var string

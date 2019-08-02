@@ -6,11 +6,11 @@
  * Time: 11:52
  */
 
-namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
+namespace Docker\WorkflowBundle\Event\SkeletonBuild;
 
 use Symfony\Component\Filesystem\Filesystem;
-use Webtown\WorkflowBundle\Event\NamespacedEvent;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Docker\WorkflowBundle\Event\NamespacedEvent;
+use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class DumpFileEvent extends NamespacedEvent
 {

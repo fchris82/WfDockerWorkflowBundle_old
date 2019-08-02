@@ -6,7 +6,7 @@
  * Time: 14:26
  */
 
-namespace Webtown\WorkflowBundle\Tests\Dummy\Builder;
+namespace Docker\WorkflowBundle\Tests\Dummy\Builder;
 
 use Mockery as m;
 use Symfony\Component\Console\Command\Command;
@@ -17,13 +17,13 @@ use Symfony\Component\Console\Tests\Fixtures\DummyOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Webtown\WorkflowBundle\Tests\Dummy\Input;
-use Webtown\WorkflowBundle\Tests\Dummy\QuestionHelper;
-use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
+use Docker\WorkflowBundle\Environment\Commander;
+use Docker\WorkflowBundle\Environment\IoManager;
+use Docker\WorkflowBundle\Environment\WfEnvironmentParser;
+use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Docker\WorkflowBundle\Tests\Dummy\Input;
+use Docker\WorkflowBundle\Tests\Dummy\QuestionHelper;
+use Docker\WorkflowBundle\Twig\Extension\TextExtension;
 
 /**
  * Class AbstractWizardBuilder

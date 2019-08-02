@@ -6,13 +6,13 @@
  * Time: 14:11
  */
 
-namespace Webtown\WorkflowBundle\Wizard;
+namespace Docker\WorkflowBundle\Wizard;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Yaml\Yaml;
-use Webtown\WorkflowBundle\Exception\ConfigurationItemNotFoundException;
+use Docker\WorkflowBundle\Exception\ConfigurationItemNotFoundException;
 
 class Configuration implements ConfigurationInterface
 {

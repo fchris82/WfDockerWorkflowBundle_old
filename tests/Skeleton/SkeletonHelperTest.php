@@ -6,10 +6,10 @@
  * Time: 14:08
  */
 
-namespace Webtown\WorkflowBundle\Tests\Skeleton;
+namespace Docker\WorkflowBundle\Tests\Skeleton;
 
 use PHPUnit\Framework\TestCase;
-use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
+use Docker\WorkflowBundle\Skeleton\SkeletonHelper;
 
 class SkeletonHelperTest extends TestCase
 {
@@ -33,7 +33,7 @@ class SkeletonHelperTest extends TestCase
     {
         return [
             [\Exception::class, 'Exception'],
-            [SkeletonHelper::class, 'WebtownWorkflowBundleSkeletonSkeletonHelper'],
+            [SkeletonHelper::class, 'DockerWorkflowBundleSkeletonSkeletonHelper'],
         ];
     }
 }

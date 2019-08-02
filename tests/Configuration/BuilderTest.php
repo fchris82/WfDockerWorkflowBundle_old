@@ -6,7 +6,7 @@
  * Time: 17:18
  */
 
-namespace Webtown\WorkflowBundle\Tests\Configuration;
+namespace Docker\WorkflowBundle\Tests\Configuration;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
@@ -14,17 +14,17 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
-use Webtown\WorkflowBundle\Configuration\Builder;
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\Event\ConfigurationEvents;
-use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\ConflictWithSimpleEventListener\ConflictWithSimpleEventListenerRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener\SimpleEventListenerRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile\SimpleSkipFileRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
+use Docker\WorkflowBundle\Configuration\Builder;
+use Docker\WorkflowBundle\Configuration\RecipeManager;
+use Docker\WorkflowBundle\Event\ConfigurationEvents;
+use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\ConflictWithSimpleEventListener\ConflictWithSimpleEventListenerRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener\SimpleEventListenerRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile\SimpleSkipFileRecipe;
+use Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
 
 class BuilderTest extends TestCase
 {
@@ -51,7 +51,7 @@ class BuilderTest extends TestCase
      * @param array $config
      * @param array $result
      *
-     * @throws \Webtown\WorkflowBundle\Exception\MissingRecipeException
+     * @throws \Docker\WorkflowBundle\Exception\MissingRecipeException
      * @throws \Exception
      * @throws \ReflectionException
      * @throws \Twig_Error_Loader
@@ -72,9 +72,9 @@ class BuilderTest extends TestCase
         $filesystem = new Filesystem($projectPath, 'alias');
         $recipeManager = new RecipeManager();
         $twigFileLoader = new FilesystemLoader();
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleEventListener', 'WebtownWorkflowBundleTestsDummyRecipesSimpleEventListenerSimpleEventListenerRecipe');
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SystemRecipe', 'WebtownWorkflowBundleTestsDummyRecipesSystemRecipeSystemRecipe');
-        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleSkipFile', 'WebtownWorkflowBundleTestsDummyRecipesSimpleSkipFileSimpleSkipFileRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleEventListener', 'DockerWorkflowBundleTestsDummyRecipesSimpleEventListenerSimpleEventListenerRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SystemRecipe', 'DockerWorkflowBundleTestsDummyRecipesSystemRecipeSystemRecipe');
+        $twigFileLoader->setPaths(__DIR__ . '/../Dummy/Recipes/SimpleSkipFile', 'DockerWorkflowBundleTestsDummyRecipesSimpleSkipFileSimpleSkipFileRecipe');
         $twig = new Environment($twigFileLoader);
         // Build recipes
         foreach ($preSystemRecipes as $recipeName => $configDefinition) {

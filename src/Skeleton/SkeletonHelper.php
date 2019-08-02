@@ -6,7 +6,7 @@
  * Time: 17:20
  */
 
-namespace Webtown\WorkflowBundle\Skeleton;
+namespace Docker\WorkflowBundle\Skeleton;
 
 class SkeletonHelper
 {
