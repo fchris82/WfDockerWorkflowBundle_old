@@ -6,7 +6,7 @@
  * Time: 11:38
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 /**
  * Class SkipRecipeException

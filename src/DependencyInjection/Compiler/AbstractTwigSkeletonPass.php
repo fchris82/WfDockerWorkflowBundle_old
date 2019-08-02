@@ -6,11 +6,11 @@
  * Time: 16:01
  */
 
-namespace Docker\WorkflowBundle\DependencyInjection\Compiler;
+namespace Wf\DockerWorkflowBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\Definition;
-use Docker\WorkflowBundle\Skeleton\SkeletonHelper;
+use Wf\DockerWorkflowBundle\Skeleton\SkeletonHelper;
 
 /**
  * Class AbstractTwigSkeletonPass

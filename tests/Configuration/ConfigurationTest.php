@@ -6,7 +6,7 @@
  * Time: 9:54
  */
 
-namespace Docker\WorkflowBundle\Tests\Configuration;
+namespace Wf\DockerWorkflowBundle\Tests\Configuration;
 
 use Mockery as m;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -16,17 +16,17 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Docker\WorkflowBundle\Configuration\Configuration;
-use Docker\WorkflowBundle\Configuration\RecipeManager;
-use Docker\WorkflowBundle\Exception\InvalidWfVersionException;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe\SystemWithoutConfigurationRecipe;
-use Docker\WorkflowBundle\Tests\TestCase;
+use Wf\DockerWorkflowBundle\Configuration\Configuration;
+use Wf\DockerWorkflowBundle\Configuration\RecipeManager;
+use Wf\DockerWorkflowBundle\Exception\InvalidWfVersionException;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Configurable\ConfigurableRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe\SystemWithoutConfigurationRecipe;
+use Wf\DockerWorkflowBundle\Tests\TestCase;
 
 class ConfigurationTest extends TestCase
 {
@@ -134,7 +134,7 @@ class ConfigurationTest extends TestCase
      * @param string          $file
      * @param bool|\Exception $exception
      *
-     * @throws \Docker\WorkflowBundle\Exception\InvalidWfVersionException
+     * @throws \Wf\DockerWorkflowBundle\Exception\InvalidWfVersionException
      * @throws \Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException
      *
      * @dataProvider dpLoadConfig

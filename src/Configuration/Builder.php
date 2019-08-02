@@ -6,24 +6,24 @@
  * Time: 17:20
  */
 
-namespace Docker\WorkflowBundle\Configuration;
+namespace Wf\DockerWorkflowBundle\Configuration;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Docker\WorkflowBundle\Event\Configuration\BuildInitEvent;
-use Docker\WorkflowBundle\Event\Configuration\RegisterEvent;
-use Docker\WorkflowBundle\Event\Configuration\VerboseInfoEvent;
-use Docker\WorkflowBundle\Event\ConfigurationEvents;
-use Docker\WorkflowBundle\Event\RegisterEventListenersInterface;
-use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Docker\WorkflowBundle\Exception\SkipRecipeException;
-use Docker\WorkflowBundle\Recipes\BaseRecipe as AncestorBaseRecipe;
-use Docker\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe;
-use Docker\WorkflowBundle\Recipes\HiddenRecipe;
-use Docker\WorkflowBundle\Skeleton\BuilderTrait;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Event\Configuration\BuildInitEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\RegisterEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\VerboseInfoEvent;
+use Wf\DockerWorkflowBundle\Event\ConfigurationEvents;
+use Wf\DockerWorkflowBundle\Event\RegisterEventListenersInterface;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Wf\DockerWorkflowBundle\Exception\SkipRecipeException;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe as AncestorBaseRecipe;
+use Wf\DockerWorkflowBundle\Recipes\CreateBaseRecipe\Recipe;
+use Wf\DockerWorkflowBundle\Recipes\HiddenRecipe;
+use Wf\DockerWorkflowBundle\Skeleton\BuilderTrait;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class Builder
 {
@@ -82,7 +82,7 @@ class Builder
      * @param string $projectPath
      * @param string $configHash
      *
-     * @throws \Docker\WorkflowBundle\Exception\MissingRecipeException
+     * @throws \Wf\DockerWorkflowBundle\Exception\MissingRecipeException
      * @throws \Exception
      * @throws \ReflectionException
      * @throws \Twig_Error_Loader
@@ -240,7 +240,7 @@ class Builder
      * @param array  $recipeConfig
      * @param array  $globalConfig
      *
-     * @throws \Docker\WorkflowBundle\Exception\MissingRecipeException
+     * @throws \Wf\DockerWorkflowBundle\Exception\MissingRecipeException
      */
     protected function addRecipeEventListeners(
         string $projectPath,
@@ -269,7 +269,7 @@ class Builder
      * @param array  $recipeConfig
      * @param array  $globalConfig
      *
-     * @throws \Docker\WorkflowBundle\Exception\MissingRecipeException
+     * @throws \Wf\DockerWorkflowBundle\Exception\MissingRecipeException
      * @throws \Exception
      * @throws \ReflectionException
      * @throws \Twig_Error_Loader
@@ -331,7 +331,7 @@ class Builder
     /**
      * @param $projectPath
      *
-     * @throws \Docker\WorkflowBundle\Exception\MissingRecipeException
+     * @throws \Wf\DockerWorkflowBundle\Exception\MissingRecipeException
      */
     protected function initEventListeners(string $projectPath): void
     {

@@ -6,7 +6,7 @@
  * Time: 19:22
  */
 
-namespace Docker\WorkflowBundle\Event\Configuration;
+namespace Wf\DockerWorkflowBundle\Event\Configuration;
 
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Contracts\EventDispatcher\Event;

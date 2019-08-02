@@ -6,17 +6,17 @@
  * Time: 10:26
  */
 
-namespace Docker\WorkflowBundle\Tests\Environment;
+namespace Wf\DockerWorkflowBundle\Tests\Environment;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use Docker\WorkflowBundle\Environment\IoManager;
-use Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Docker\WorkflowBundle\Environment\SymfonyEnvironmentParser;
-use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Wf\DockerWorkflowBundle\Environment\SymfonyEnvironmentParser;
+use Wf\DockerWorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
 
 class SymfonyEnvironmentParserTest extends TestCase
 {

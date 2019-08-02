@@ -6,9 +6,9 @@
  * Time: 15:30
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
-use Docker\WorkflowBundle\Wizards\BaseWizard;
+use Wf\DockerWorkflowBundle\Wizards\BaseWizard;
 
 class WizardWfIsRequiredException extends WizardSomethingIsRequiredException
 {

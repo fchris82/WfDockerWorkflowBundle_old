@@ -6,7 +6,7 @@
  * Time: 15:54.
  */
 
-namespace Docker\WorkflowBundle\Wizard;
+namespace Wf\DockerWorkflowBundle\Wizard;
 
 interface WizardInterface
 {

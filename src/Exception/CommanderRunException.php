@@ -6,7 +6,7 @@
  * Time: 17:03
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 use Throwable;
 

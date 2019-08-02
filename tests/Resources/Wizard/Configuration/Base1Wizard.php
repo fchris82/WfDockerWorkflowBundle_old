@@ -6,10 +6,10 @@
  * Time: 12:58
  */
 
-namespace Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration;
+namespace Wf\DockerWorkflowBundle\Tests\Resources\Wizard\Configuration;
 
-use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Docker\WorkflowBundle\Wizards\BaseWizard;
+use Wf\DockerWorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Wf\DockerWorkflowBundle\Wizards\BaseWizard;
 
 class Base1Wizard extends BaseWizard
 {

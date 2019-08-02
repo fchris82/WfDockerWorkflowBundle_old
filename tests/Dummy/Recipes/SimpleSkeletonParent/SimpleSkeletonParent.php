@@ -6,10 +6,10 @@
  * Time: 16:35
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent;
 
-use Docker\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleSkeletonParent extends BaseRecipe implements AbstractTemplateRecipe
 {

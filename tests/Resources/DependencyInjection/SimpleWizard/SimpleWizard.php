@@ -6,10 +6,10 @@
  * Time: 12:06
  */
 
-namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard;
+namespace Wf\DockerWorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard;
 
-use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Docker\WorkflowBundle\Wizards\BaseWizard;
+use Wf\DockerWorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Wf\DockerWorkflowBundle\Wizards\BaseWizard;
 
 class SimpleWizard extends BaseWizard
 {

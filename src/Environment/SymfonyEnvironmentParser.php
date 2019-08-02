@@ -6,11 +6,11 @@
  * Time: 12:34
  */
 
-namespace Docker\WorkflowBundle\Environment;
+namespace Wf\DockerWorkflowBundle\Environment;
 
 use Symfony\Component\Console\Question\ChoiceQuestion;
-use Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Wf\DockerWorkflowBundle\Exception\InvalidComposerVersionNumber;
 
 class SymfonyEnvironmentParser
 {

@@ -6,10 +6,10 @@
  * Time: 19:20
  */
 
-namespace Docker\WorkflowBundle\Event\Configuration;
+namespace Wf\DockerWorkflowBundle\Event\Configuration;
 
 use Symfony\Contracts\EventDispatcher\Event;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class RegisterEvent extends Event
 {

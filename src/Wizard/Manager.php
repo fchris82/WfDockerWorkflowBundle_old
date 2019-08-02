@@ -6,7 +6,7 @@
  * Time: 16:05.
  */
 
-namespace Docker\WorkflowBundle\Wizard;
+namespace Wf\DockerWorkflowBundle\Wizard;
 
 /**
  * Class Manager.

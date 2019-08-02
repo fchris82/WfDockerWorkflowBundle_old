@@ -6,10 +6,10 @@
  * Time: 17:08
  */
 
-namespace Docker\WorkflowBundle\Recipes;
+namespace Wf\DockerWorkflowBundle\Recipes;
 
-use Docker\WorkflowBundle\Event\Configuration\RegisterEvent;
-use Docker\WorkflowBundle\Event\ConfigurationEvents;
+use Wf\DockerWorkflowBundle\Event\Configuration\RegisterEvent;
+use Wf\DockerWorkflowBundle\Event\ConfigurationEvents;
 
 abstract class SystemRecipe extends HiddenRecipe
 {

@@ -6,9 +6,9 @@
  * Time: 12:52
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\Simple;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Simple;
 
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleRecipe extends BaseRecipe
 {

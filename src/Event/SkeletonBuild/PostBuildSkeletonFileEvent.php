@@ -6,10 +6,10 @@
  * Time: 17:33
  */
 
-namespace Docker\WorkflowBundle\Event\SkeletonBuild;
+namespace Wf\DockerWorkflowBundle\Event\SkeletonBuild;
 
 use Symfony\Component\Finder\SplFileInfo;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class PostBuildSkeletonFileEvent extends PreBuildSkeletonFileEvent
 {

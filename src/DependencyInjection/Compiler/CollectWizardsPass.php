@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Docker\WorkflowBundle\DependencyInjection\Compiler;
+namespace Wf\DockerWorkflowBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
-use Docker\WorkflowBundle\DockerWorkflowBundle;
-use Docker\WorkflowBundle\Wizard\Manager;
+use Wf\DockerWorkflowBundle\WfDockerWorkflowBundle;
+use Wf\DockerWorkflowBundle\Wizard\Manager;
 
 class CollectWizardsPass extends AbstractTwigSkeletonPass
 {
@@ -21,7 +21,7 @@ class CollectWizardsPass extends AbstractTwigSkeletonPass
         $definition = $container->getDefinition(Manager::class);
         $twigFilesystemLoaderDefinition = $container->getDefinition(parent::DEFAULT_TWIG_LOADER);
 
-        foreach ($container->findTaggedServiceIds(DockerWorkflowBundle::WIZARD_TAG) as $serviceId => $taggedService) {
+        foreach ($container->findTaggedServiceIds(WfDockerWorkflowBundle::WIZARD_TAG) as $serviceId => $taggedService) {
             $serviceDefinition = $container->getDefinition($serviceId);
             $definition->addMethodCall('addWizard', [new Reference($serviceId)]);
 

@@ -6,12 +6,12 @@
  * Time: 12:37
  */
 
-namespace Docker\WorkflowBundle\Tests\Environment\MicroParser;
+namespace Wf\DockerWorkflowBundle\Tests\Environment\MicroParser;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
 
 class ComposerInstalledVersionParserTest extends TestCase
 {

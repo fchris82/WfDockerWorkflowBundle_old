@@ -6,16 +6,16 @@
  * Time: 12:09
  */
 
-namespace Docker\WorkflowBundle\Tests\Environment;
+namespace Wf\DockerWorkflowBundle\Tests\Environment;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
-use Docker\WorkflowBundle\Configuration\Configuration;
-use Docker\WorkflowBundle\Environment\Commander;
-use Docker\WorkflowBundle\Environment\WfEnvironmentParser;
-use Docker\WorkflowBundle\Exception\CommanderRunException;
-use Docker\WorkflowBundle\Tests\Dummy\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Configuration\Configuration;
+use Wf\DockerWorkflowBundle\Environment\Commander;
+use Wf\DockerWorkflowBundle\Environment\WfEnvironmentParser;
+use Wf\DockerWorkflowBundle\Exception\CommanderRunException;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Environment\IoManager;
 
 class CommanderTest extends TestCase
 {

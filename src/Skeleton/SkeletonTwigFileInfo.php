@@ -6,7 +6,7 @@
  * Time: 17:39
  */
 
-namespace Docker\WorkflowBundle\Skeleton;
+namespace Wf\DockerWorkflowBundle\Skeleton;
 
 use Symfony\Component\Finder\SplFileInfo;
 

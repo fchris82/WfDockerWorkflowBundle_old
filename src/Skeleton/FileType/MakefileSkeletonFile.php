@@ -6,7 +6,7 @@
  * Time: 22:00
  */
 
-namespace Docker\WorkflowBundle\Skeleton\FileType;
+namespace Wf\DockerWorkflowBundle\Skeleton\FileType;
 
 class MakefileSkeletonFile extends SkeletonFile
 {

@@ -6,9 +6,9 @@
  * Time: 16:48
  */
 
-namespace Docker\WorkflowBundle\Environment;
+namespace Wf\DockerWorkflowBundle\Environment;
 
-use Docker\WorkflowBundle\Exception\CommanderRunException;
+use Wf\DockerWorkflowBundle\Exception\CommanderRunException;
 
 class Commander
 {

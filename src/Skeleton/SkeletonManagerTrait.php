@@ -6,20 +6,20 @@
  * Time: 13:15
  */
 
-namespace Docker\WorkflowBundle\Skeleton;
+namespace Wf\DockerWorkflowBundle\Skeleton;
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use Twig\Environment;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Docker\WorkflowBundle\Exception\CircularReferenceException;
-use Docker\WorkflowBundle\Exception\SkipSkeletonFileException;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Wf\DockerWorkflowBundle\Exception\CircularReferenceException;
+use Wf\DockerWorkflowBundle\Exception\SkipSkeletonFileException;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 trait SkeletonManagerTrait
 {

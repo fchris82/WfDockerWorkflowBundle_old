@@ -6,7 +6,7 @@
  * Time: 11:19
  */
 
-namespace Docker\WorkflowBundle\Skeleton\FileType;
+namespace Wf\DockerWorkflowBundle\Skeleton\FileType;
 
 class SkeletonDirectory extends SkeletonFile
 {

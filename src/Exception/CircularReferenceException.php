@@ -6,7 +6,7 @@
  * Time: 13:12
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 class CircularReferenceException extends \Exception
 {

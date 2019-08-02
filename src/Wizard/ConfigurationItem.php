@@ -6,7 +6,7 @@
  * Time: 14:56
  */
 
-namespace Docker\WorkflowBundle\Wizard;
+namespace Wf\DockerWorkflowBundle\Wizard;
 
 class ConfigurationItem
 {

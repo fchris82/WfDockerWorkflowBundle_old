@@ -1,5 +1,5 @@
 {
-    "name": "docker/workflow-bundle",
+    "name": "wf/docker-workflow-bundle",
     "description": "Base Workflow Bundle for recipes and wizards",
     "license": "MIT",
     "authors": [
@@ -26,8 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Docker\\WorkflowBundle\\Tests\\": "tests/",
-            "Docker\\WorkflowBundle\\": "src/"
+            "Wf\\DockerWorkflowBundle\\Tests\\": "tests/",
+            "Wf\\DockerWorkflowBundle\\": "src/"
         }
     }
 }

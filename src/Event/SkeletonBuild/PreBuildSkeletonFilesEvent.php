@@ -6,10 +6,10 @@
  * Time: 13:02
  */
 
-namespace Docker\WorkflowBundle\Event\SkeletonBuild;
+namespace Wf\DockerWorkflowBundle\Event\SkeletonBuild;
 
-use Docker\WorkflowBundle\Event\NamespacedEvent;
-use Docker\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
+use Wf\DockerWorkflowBundle\Event\NamespacedEvent;
+use Wf\DockerWorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 
 class PreBuildSkeletonFilesEvent extends NamespacedEvent
 {

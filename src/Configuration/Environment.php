@@ -6,7 +6,7 @@
  * Time: 21:33
  */
 
-namespace Docker\WorkflowBundle\Configuration;
+namespace Wf\DockerWorkflowBundle\Configuration;
 
 /**
  * Class Environment

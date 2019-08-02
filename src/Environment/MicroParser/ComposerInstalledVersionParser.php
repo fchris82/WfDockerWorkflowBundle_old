@@ -6,7 +6,7 @@
  * Time: 12:37
  */
 
-namespace Docker\WorkflowBundle\Environment\MicroParser;
+namespace Wf\DockerWorkflowBundle\Environment\MicroParser;
 
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 

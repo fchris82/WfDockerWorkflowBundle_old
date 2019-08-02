@@ -6,7 +6,7 @@
  * Time: 21:18
  */
 
-namespace Docker\WorkflowBundle\Test\Dummy;
+namespace Wf\DockerWorkflowBundle\Test\Dummy;
 
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem as BaseFilesystem;

@@ -6,12 +6,12 @@
  * Time: 22:23
  */
 
-namespace Docker\WorkflowBundle\Event;
+namespace Wf\DockerWorkflowBundle\Event;
 
-use Docker\WorkflowBundle\Event\Configuration\BuildInitEvent;
-use Docker\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
-use Docker\WorkflowBundle\Event\Configuration\RegisterEvent;
-use Docker\WorkflowBundle\Event\Configuration\VerboseInfoEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\BuildInitEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\RegisterEvent;
+use Wf\DockerWorkflowBundle\Event\Configuration\VerboseInfoEvent;
 
 class ConfigurationEvents
 {

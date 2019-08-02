@@ -6,7 +6,7 @@
  * Time: 21:34
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy;
 
 use Symfony\Component\Console\Helper\QuestionHelper as BaseQuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;

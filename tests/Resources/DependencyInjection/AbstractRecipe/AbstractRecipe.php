@@ -6,10 +6,10 @@
  * Time: 12:08
  */
 
-namespace Docker\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe;
+namespace Wf\DockerWorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe;
 
-use Docker\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class AbstractRecipe extends BaseRecipe implements AbstractTemplateRecipe
 {

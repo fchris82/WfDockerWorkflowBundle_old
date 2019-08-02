@@ -6,16 +6,16 @@
  * Time: 8:44
  */
 
-namespace Docker\WorkflowBundle\Tests\Configuration;
+namespace Wf\DockerWorkflowBundle\Tests\Configuration;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Docker\WorkflowBundle\Configuration\RecipeManager;
-use Docker\WorkflowBundle\Exception\MissingRecipeException;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Configuration\RecipeManager;
+use Wf\DockerWorkflowBundle\Exception\MissingRecipeException;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class RecipeManagerTest extends TestCase
 {

@@ -6,7 +6,7 @@
  * Time: 22:00
  */
 
-namespace Docker\WorkflowBundle\Recipes;
+namespace Wf\DockerWorkflowBundle\Recipes;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
@@ -14,15 +14,15 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Finder\SplFileInfo;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
-use Docker\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Docker\WorkflowBundle\Skeleton\SkeletonManagerTrait;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\SkeletonManagerTrait;
 
 abstract class BaseRecipe
 {

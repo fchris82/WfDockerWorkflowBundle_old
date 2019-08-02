@@ -6,18 +6,18 @@
  * Time: 14:06
  */
 
-namespace Docker\WorkflowBundle\Tests\Wizards;
+namespace Wf\DockerWorkflowBundle\Tests\Wizards;
 
 use Mockery as m;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Finder\SplFileInfo;
 use Twig\Environment;
-use Docker\WorkflowBundle\Environment\Commander;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
-use Docker\WorkflowBundle\Tests\Dummy\Environment\IoManager;
-use Docker\WorkflowBundle\Tests\Dummy\Wizards\BaseSkeletonWizard;
-use Docker\WorkflowBundle\Tests\SkeletonTestCase;
+use Wf\DockerWorkflowBundle\Environment\Commander;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Wizards\BaseSkeletonWizard;
+use Wf\DockerWorkflowBundle\Tests\SkeletonTestCase;
 
 class BaseSkeletonWizardTest extends SkeletonTestCase
 {

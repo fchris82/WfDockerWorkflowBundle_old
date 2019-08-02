@@ -6,7 +6,7 @@
  * Time: 12:35
  */
 
-namespace Docker\WorkflowBundle\Environment\MicroParser;
+namespace Wf\DockerWorkflowBundle\Environment\MicroParser;
 
 interface MicroParserInterface
 {

@@ -6,7 +6,7 @@
  * Time: 21:41
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy;
 
 use Symfony\Component\Console\Command\Command as BaseCommand;
 

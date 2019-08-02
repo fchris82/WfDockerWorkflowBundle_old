@@ -6,23 +6,23 @@
  * Time: 15:30
  */
 
-namespace Docker\WorkflowBundle\Tests\Recipes\CreateBaseRecipe;
+namespace Wf\DockerWorkflowBundle\Tests\Recipes\CreateBaseRecipe;
 
 use Mockery as m;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Yaml\Yaml;
-use Docker\WorkflowBundle\Event\Configuration\BuildInitEvent;
-use Docker\WorkflowBundle\Event\ConfigurationEvents;
-use Docker\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Docker\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe;
-use Docker\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
-use Docker\WorkflowBundle\Tests\Dummy\Configuration\Environment;
-use Docker\WorkflowBundle\Tests\SkeletonTestCase;
+use Wf\DockerWorkflowBundle\Event\Configuration\BuildInitEvent;
+use Wf\DockerWorkflowBundle\Event\ConfigurationEvents;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Wf\DockerWorkflowBundle\Recipes\CreateBaseRecipe\Recipe;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Configuration\Environment;
+use Wf\DockerWorkflowBundle\Tests\SkeletonTestCase;
 
 class RecipeTest extends SkeletonTestCase
 {

@@ -6,7 +6,7 @@
  * Time: 18:25
  */
 
-namespace Docker\WorkflowBundle\Event;
+namespace Wf\DockerWorkflowBundle\Event;
 
 class ExtensionEvents
 {

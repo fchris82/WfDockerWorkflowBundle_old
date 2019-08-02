@@ -6,11 +6,11 @@
  * Time: 22:26
  */
 
-namespace Docker\WorkflowBundle\Configuration;
+namespace Wf\DockerWorkflowBundle\Configuration;
 
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use Docker\WorkflowBundle\Exception\MissingRecipeException;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Exception\MissingRecipeException;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class RecipeManager
 {

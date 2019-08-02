@@ -6,13 +6,13 @@
  * Time: 14:11
  */
 
-namespace Docker\WorkflowBundle\Wizard;
+namespace Wf\DockerWorkflowBundle\Wizard;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Yaml\Yaml;
-use Docker\WorkflowBundle\Exception\ConfigurationItemNotFoundException;
+use Wf\DockerWorkflowBundle\Exception\ConfigurationItemNotFoundException;
 
 class Configuration implements ConfigurationInterface
 {

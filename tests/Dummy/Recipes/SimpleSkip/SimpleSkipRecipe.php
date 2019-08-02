@@ -6,10 +6,10 @@
  * Time: 12:18
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SimpleSkip;
 
-use Docker\WorkflowBundle\Exception\SkipRecipeException;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Exception\SkipRecipeException;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
 
 class SimpleSkipRecipe extends BaseRecipe
 {

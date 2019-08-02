@@ -6,17 +6,17 @@
  * Time: 15:54.
  */
 
-namespace Docker\WorkflowBundle\Wizards;
+namespace Wf\DockerWorkflowBundle\Wizards;
 
 use Symfony\Component\Console\Question\Question;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Docker\WorkflowBundle\Environment\Commander;
-use Docker\WorkflowBundle\Environment\IoManager;
-use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
-use Docker\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
-use Docker\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
-use Docker\WorkflowBundle\Wizard\WizardInterface;
+use Wf\DockerWorkflowBundle\Environment\Commander;
+use Wf\DockerWorkflowBundle\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Wf\DockerWorkflowBundle\Exception\WizardHasAlreadyBuiltException;
+use Wf\DockerWorkflowBundle\Exception\WizardSomethingIsRequiredException;
+use Wf\DockerWorkflowBundle\Wizard\WizardInterface;
 
 /**
  * Class BaseSkeleton.

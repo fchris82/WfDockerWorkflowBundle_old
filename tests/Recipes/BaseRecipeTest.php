@@ -6,7 +6,7 @@
  * Time: 13:52
  */
 
-namespace Docker\WorkflowBundle\Tests\Recipes;
+namespace Wf\DockerWorkflowBundle\Tests\Recipes;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Dumper\YamlReferenceDumper;
@@ -14,12 +14,12 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Yaml\Yaml;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
-use Docker\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent\SimpleSkeletonParent;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent\SimpleSkeletonParent;
 
 class BaseRecipeTest extends TestCase
 {
@@ -93,11 +93,11 @@ class BaseRecipeTest extends TestCase
         $twigLoader = new FilesystemLoader();
         $twigLoader->setPaths(
             [realpath(__DIR__ . '/../Dummy/Recipes/Simple')],
-            'DockerWorkflowBundleTestsDummyRecipesSimpleSimpleRecipe'
+            'WfDockerWorkflowBundleTestsDummyRecipesSimpleSimpleRecipe'
         );
         $twigLoader->setPaths(
             [realpath(__DIR__ . '/../Dummy/Recipes/SimpleSkeletonParent')],
-            'DockerWorkflowBundleTestsDummyRecipesSimpleSkeletonParentSimpleSkeletonParent'
+            'WfDockerWorkflowBundleTestsDummyRecipesSimpleSkeletonParentSimpleSkeletonParent'
         );
         $recipe = new SimpleRecipe(new Environment($twigLoader), new EventDispatcher());
         SimpleRecipe::setSkeletonParents($parents);

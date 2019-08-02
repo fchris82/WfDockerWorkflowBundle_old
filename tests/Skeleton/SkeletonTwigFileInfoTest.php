@@ -6,11 +6,11 @@
  * Time: 14:17
  */
 
-namespace Docker\WorkflowBundle\Tests\Skeleton;
+namespace Wf\DockerWorkflowBundle\Tests\Skeleton;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
-use Docker\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
+use Wf\DockerWorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 
 class SkeletonTwigFileInfoTest extends TestCase
 {

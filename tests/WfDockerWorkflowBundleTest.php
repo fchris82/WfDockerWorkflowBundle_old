@@ -6,20 +6,20 @@
  * Time: 17:03
  */
 
-namespace Docker\WorkflowBundle\Tests;
+namespace Wf\DockerWorkflowBundle\Tests;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
-use Docker\WorkflowBundle\DockerWorkflowBundle;
-use Docker\WorkflowBundle\Wizard\WizardInterface;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\WfDockerWorkflowBundle;
+use Wf\DockerWorkflowBundle\Wizard\WizardInterface;
 
-class DockerWorkflowBundleTest extends \PHPUnit\Framework\TestCase
+class WfDockerWorkflowBundleTest extends \PHPUnit\Framework\TestCase
 {
     public function testBuild()
     {
-        $bundle = new DockerWorkflowBundle();
+        $bundle = new WfDockerWorkflowBundle();
         $containerBuilder = new ContainerBuilder();
         $bundle->build($containerBuilder);
 

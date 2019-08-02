@@ -6,17 +6,17 @@
  * Time: 12:50
  */
 
-namespace Docker\WorkflowBundle\Tests\Wizard;
+namespace Wf\DockerWorkflowBundle\Tests\Wizard;
 
 use PHPUnit\Framework\TestCase;
-use Docker\WorkflowBundle\Exception\ConfigurationItemNotFoundException;
-use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
-use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
-use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard;
-use Docker\WorkflowBundle\Tests\Resources\Wizard\Configuration\MissingWizard;
-use Docker\WorkflowBundle\Wizard\Configuration;
-use Docker\WorkflowBundle\Wizard\ConfigurationItem;
-use Docker\WorkflowBundle\Wizards\BaseWizard;
+use Wf\DockerWorkflowBundle\Exception\ConfigurationItemNotFoundException;
+use Wf\DockerWorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
+use Wf\DockerWorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
+use Wf\DockerWorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard;
+use Wf\DockerWorkflowBundle\Tests\Resources\Wizard\Configuration\MissingWizard;
+use Wf\DockerWorkflowBundle\Wizard\Configuration;
+use Wf\DockerWorkflowBundle\Wizard\ConfigurationItem;
+use Wf\DockerWorkflowBundle\Wizards\BaseWizard;
 
 class ConfigurationTest extends TestCase
 {

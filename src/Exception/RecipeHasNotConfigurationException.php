@@ -6,7 +6,7 @@
  * Time: 12:00
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 class RecipeHasNotConfigurationException extends \Exception
 {

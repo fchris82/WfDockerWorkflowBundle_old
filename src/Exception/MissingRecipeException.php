@@ -6,7 +6,7 @@
  * Time: 17:10
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 class MissingRecipeException extends \Exception
 {

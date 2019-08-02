@@ -6,9 +6,9 @@
  * Time: 13:47
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe;
 
-use Docker\WorkflowBundle\Recipes\SystemRecipe;
+use Wf\DockerWorkflowBundle\Recipes\SystemRecipe;
 
 class SystemWithoutConfigurationRecipe extends SystemRecipe
 {

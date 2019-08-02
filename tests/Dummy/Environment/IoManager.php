@@ -6,11 +6,11 @@
  * Time: 11:55
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Environment;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Environment;
 
 use Symfony\Component\Console\Output\BufferedOutput;
 
-class IoManager extends \Docker\WorkflowBundle\Environment\IoManager
+class IoManager extends \Wf\DockerWorkflowBundle\Environment\IoManager
 {
     public function __construct()
     {

@@ -6,7 +6,7 @@
  * Time: 14:26
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Builder;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Builder;
 
 use Mockery as m;
 use Symfony\Component\Console\Command\Command;
@@ -17,13 +17,13 @@ use Symfony\Component\Console\Tests\Fixtures\DummyOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
-use Docker\WorkflowBundle\Environment\Commander;
-use Docker\WorkflowBundle\Environment\IoManager;
-use Docker\WorkflowBundle\Environment\WfEnvironmentParser;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
-use Docker\WorkflowBundle\Tests\Dummy\Input;
-use Docker\WorkflowBundle\Tests\Dummy\QuestionHelper;
-use Docker\WorkflowBundle\Twig\Extension\TextExtension;
+use Wf\DockerWorkflowBundle\Environment\Commander;
+use Wf\DockerWorkflowBundle\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Environment\WfEnvironmentParser;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Input;
+use Wf\DockerWorkflowBundle\Tests\Dummy\QuestionHelper;
+use Wf\DockerWorkflowBundle\Twig\Extension\TextExtension;
 
 /**
  * Class AbstractWizardBuilder

@@ -1,4 +1,4 @@
-# Class: Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile
+# Class: Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile
 # HandleExisting: 0
 Docker Workflow
 ===============

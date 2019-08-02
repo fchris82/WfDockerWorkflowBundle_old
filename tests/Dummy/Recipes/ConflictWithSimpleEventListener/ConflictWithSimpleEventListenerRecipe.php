@@ -6,15 +6,15 @@
  * Time: 11:23
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\ConflictWithSimpleEventListener;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\ConflictWithSimpleEventListener;
 
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
-use Docker\WorkflowBundle\Event\RegisterEventListenersInterface;
-use Docker\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
-use Docker\WorkflowBundle\Event\SkeletonBuildBaseEvents;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Event\RegisterEventListenersInterface;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
+use Wf\DockerWorkflowBundle\Event\SkeletonBuildBaseEvents;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
 
 /**
  * With this recipe we can test the SkeletonBuildBaseEvents::BEFORE_DUMP_TARGET_EXISTS event. This recipe create a

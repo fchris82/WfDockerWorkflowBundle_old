@@ -6,13 +6,13 @@
  * Time: 13:52
  */
 
-namespace Docker\WorkflowBundle\Tests\Recipes;
+namespace Wf\DockerWorkflowBundle\Tests\Recipes;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
-use Docker\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
+use Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
 
 class HiddenRecipeTest extends TestCase
 {

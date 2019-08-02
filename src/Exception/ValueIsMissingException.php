@@ -6,7 +6,7 @@
  * Time: 12:54
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 class ValueIsMissingException extends \Exception
 {

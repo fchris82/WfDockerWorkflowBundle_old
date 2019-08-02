@@ -1,4 +1,4 @@
-# Class: Docker\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile
+# Class: Wf\DockerWorkflowBundle\Skeleton\FileType\MakefileSkeletonFile
 # HandleExisting: 0
 PROJECT_WORKING_DIRECTORY := $${PWD}
 WF_TARGET_DIRECTORY := .wf

@@ -6,12 +6,12 @@
  * Time: 12:37
  */
 
-namespace Docker\WorkflowBundle\Environment\MicroParser;
+namespace Wf\DockerWorkflowBundle\Environment\MicroParser;
 
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem;
-use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Docker\WorkflowBundle\Exception\ValueIsMissingException;
+use Wf\DockerWorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Wf\DockerWorkflowBundle\Exception\ValueIsMissingException;
 
 class ComposerJsonInformationParser implements MicroParserInterface
 {

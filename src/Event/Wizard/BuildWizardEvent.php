@@ -6,7 +6,7 @@
  * Time: 15:53
  */
 
-namespace Docker\WorkflowBundle\Event\Wizard;
+namespace Wf\DockerWorkflowBundle\Event\Wizard;
 
 use Symfony\Contracts\EventDispatcher\Event;
 

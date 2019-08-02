@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Docker\WorkflowBundle\Skeleton;
+namespace Wf\DockerWorkflowBundle\Skeleton;
 
 class TemplateTwigFileInfo extends SkeletonTwigFileInfo
 {

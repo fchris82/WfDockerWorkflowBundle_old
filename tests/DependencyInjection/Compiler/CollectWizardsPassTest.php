@@ -6,7 +6,7 @@
  * Time: 14:04
  */
 
-namespace Docker\WorkflowBundle\Tests\DependencyInjection\Compiler;
+namespace Wf\DockerWorkflowBundle\Tests\DependencyInjection\Compiler;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,13 +14,13 @@ use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\Reference;
 use Twig\Loader\FilesystemLoader;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
-use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenSkeletonWizard\OverriddenSkeletonWizard;
-use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleSkeletonWizard\SimpleSkeletonWizard;
-use Docker\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard\SimpleWizard;
-use Docker\WorkflowBundle\DockerWorkflowBundle;
-use Docker\WorkflowBundle\Wizard\Manager;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
+use Wf\DockerWorkflowBundle\Tests\Resources\DependencyInjection\OverriddenSkeletonWizard\OverriddenSkeletonWizard;
+use Wf\DockerWorkflowBundle\Tests\Resources\DependencyInjection\SimpleSkeletonWizard\SimpleSkeletonWizard;
+use Wf\DockerWorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard\SimpleWizard;
+use Wf\DockerWorkflowBundle\WfDockerWorkflowBundle;
+use Wf\DockerWorkflowBundle\Wizard\Manager;
 
 class CollectWizardsPassTest extends TestCase
 {
@@ -47,7 +47,7 @@ class CollectWizardsPassTest extends TestCase
 
         foreach ($wizards as $wizadClass) {
             $wizardDefinition = new Definition($wizadClass);
-            $wizardDefinition->addTag(DockerWorkflowBundle::WIZARD_TAG);
+            $wizardDefinition->addTag(WfDockerWorkflowBundle::WIZARD_TAG);
             $containerBuilder->setDefinition($wizadClass, $wizardDefinition);
         }
 
@@ -69,7 +69,7 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(SimpleWizard::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleWizard'),
-                    'DockerWorkflowBundleTestsResourcesDependencyInjectionSimpleWizardSimpleWizard',
+                    'WfDockerWorkflowBundleTestsResourcesDependencyInjectionSimpleWizardSimpleWizard',
                 ]]],
             ],
             // Simple wizard with skeleton, no overridden
@@ -78,7 +78,7 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(SimpleSkeletonWizard::class)]]],
                 [['addPath', [
                     realpath(__DIR__ . '/../../Resources/DependencyInjection/SimpleSkeletonWizard'),
-                    'DockerWorkflowBundleTestsResourcesDependencyInjectionSimpleSkeletonWizardSimpleSkeletonWizard',
+                    'WfDockerWorkflowBundleTestsResourcesDependencyInjectionSimpleSkeletonWizardSimpleSkeletonWizard',
                 ]]],
             ],
             // Overridden skeletons wizard. There should be 2 twig add path
@@ -87,12 +87,12 @@ class CollectWizardsPassTest extends TestCase
                 [['addWizard', [new Reference(OverriddenSkeletonWizard::class)]]],
                 [
                     ['addPath', [
-                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard'),
-                        'DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
+                        realpath(__DIR__ . '/../../Resources/DependencyInjection/templates/bundles/WfDockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard'),
+                        'WfDockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
                     ]],
                     ['addPath', [
                         realpath(__DIR__ . '/../../Resources/DependencyInjection/OverriddenSkeletonWizard'),
-                        'DockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
+                        'WfDockerWorkflowBundleTestsResourcesDependencyInjectionOverriddenSkeletonWizardOverriddenSkeletonWizard',
                     ]],
                 ],
             ],

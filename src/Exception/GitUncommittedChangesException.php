@@ -6,7 +6,7 @@
  * Time: 13:53.
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 /**
  * Class GitUncommittedChangesException.

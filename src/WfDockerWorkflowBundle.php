@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Docker\WorkflowBundle;
+namespace Wf\DockerWorkflowBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
-use Docker\WorkflowBundle\Recipes\BaseRecipe;
-use Docker\WorkflowBundle\Wizard\WizardInterface;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
+use Wf\DockerWorkflowBundle\Recipes\BaseRecipe;
+use Wf\DockerWorkflowBundle\Wizard\WizardInterface;
 
-class DockerWorkflowBundle extends Bundle
+class WfDockerWorkflowBundle extends Bundle
 {
     const RECIPE_TAG = 'wf.recipe';
     const WIZARD_TAG = 'wf.wizard';

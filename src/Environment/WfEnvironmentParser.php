@@ -6,10 +6,10 @@
  * Time: 13:10
  */
 
-namespace Docker\WorkflowBundle\Environment;
+namespace Wf\DockerWorkflowBundle\Environment;
 
 use Symfony\Component\Filesystem\Filesystem;
-use Docker\WorkflowBundle\Configuration\Configuration;
+use Wf\DockerWorkflowBundle\Configuration\Configuration;
 
 class WfEnvironmentParser
 {

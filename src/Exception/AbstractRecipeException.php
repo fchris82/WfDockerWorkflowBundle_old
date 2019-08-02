@@ -6,7 +6,7 @@
  * Time: 12:12
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 class AbstractRecipeException extends \Exception
 {

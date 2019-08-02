@@ -6,11 +6,11 @@
  * Time: 10:29
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Wizards;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Wizards;
 
-use Docker\WorkflowBundle\Event\Wizard\BuildWizardEvent;
+use Wf\DockerWorkflowBundle\Event\Wizard\BuildWizardEvent;
 
-class BaseWizard extends \Docker\WorkflowBundle\Wizards\BaseWizard
+class BaseWizard extends \Wf\DockerWorkflowBundle\Wizards\BaseWizard
 {
     /**
      * @var BuildWizardEvent

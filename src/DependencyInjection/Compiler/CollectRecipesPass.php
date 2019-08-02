@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Docker\WorkflowBundle\DependencyInjection\Compiler;
+namespace Wf\DockerWorkflowBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
-use Docker\WorkflowBundle\Configuration\RecipeManager;
-use Docker\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Docker\WorkflowBundle\DockerWorkflowBundle;
+use Wf\DockerWorkflowBundle\Configuration\RecipeManager;
+use Wf\DockerWorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Wf\DockerWorkflowBundle\WfDockerWorkflowBundle;
 
 class CollectRecipesPass extends AbstractTwigSkeletonPass
 {
@@ -23,7 +23,7 @@ class CollectRecipesPass extends AbstractTwigSkeletonPass
         $definition = $container->getDefinition(RecipeManager::class);
         $twigFilesystemLoaderDefinition = $container->getDefinition(parent::DEFAULT_TWIG_LOADER);
 
-        foreach ($container->findTaggedServiceIds(DockerWorkflowBundle::RECIPE_TAG) as $serviceId => $taggedService) {
+        foreach ($container->findTaggedServiceIds(WfDockerWorkflowBundle::RECIPE_TAG) as $serviceId => $taggedService) {
             $serviceDefinition = $container->getDefinition($serviceId);
             if (!$this->isTheServiceAbstract($serviceDefinition)) {
                 $definition->addMethodCall('addRecipe', [new Reference($serviceId)]);

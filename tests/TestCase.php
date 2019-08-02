@@ -6,7 +6,7 @@
  * Time: 10:53
  */
 
-namespace Docker\WorkflowBundle\Tests;
+namespace Wf\DockerWorkflowBundle\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

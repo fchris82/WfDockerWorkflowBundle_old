@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Docker\WorkflowBundle\Recipes;
+namespace Wf\DockerWorkflowBundle\Recipes;
 
-use Docker\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
+use Wf\DockerWorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
 
 /**
  * Interface AbstractTemplateRecipe

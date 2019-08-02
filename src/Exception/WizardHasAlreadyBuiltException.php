@@ -6,10 +6,10 @@
  * Time: 12:32
  */
 
-namespace Docker\WorkflowBundle\Exception;
+namespace Wf\DockerWorkflowBundle\Exception;
 
 use Throwable;
-use Docker\WorkflowBundle\Wizards\BaseWizard;
+use Wf\DockerWorkflowBundle\Wizards\BaseWizard;
 
 class WizardHasAlreadyBuiltException extends \Exception
 {

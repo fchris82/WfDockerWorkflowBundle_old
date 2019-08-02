@@ -6,7 +6,7 @@
  * Time: 17:00
  */
 
-namespace Docker\WorkflowBundle\Twig\Extension;
+namespace Wf\DockerWorkflowBundle\Twig\Extension;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;

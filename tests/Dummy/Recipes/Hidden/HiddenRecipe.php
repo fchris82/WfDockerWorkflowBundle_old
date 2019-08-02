@@ -6,9 +6,9 @@
  * Time: 12:52
  */
 
-namespace Docker\WorkflowBundle\Tests\Dummy\Recipes\Hidden;
+namespace Wf\DockerWorkflowBundle\Tests\Dummy\Recipes\Hidden;
 
-use Docker\WorkflowBundle\Recipes\HiddenRecipe as BaseHiddenRecipe;
+use Wf\DockerWorkflowBundle\Recipes\HiddenRecipe as BaseHiddenRecipe;
 
 class HiddenRecipe extends BaseHiddenRecipe
 {

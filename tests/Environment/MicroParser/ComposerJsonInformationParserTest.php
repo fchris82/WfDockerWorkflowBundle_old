@@ -6,14 +6,14 @@
  * Time: 10:32
  */
 
-namespace Docker\WorkflowBundle\Tests\Environment\MicroParser;
+namespace Wf\DockerWorkflowBundle\Tests\Environment\MicroParser;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem as SfFilesystem;
-use Docker\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser;
-use Docker\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser;
+use Wf\DockerWorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
 
 class ComposerJsonInformationParserTest extends TestCase
 {

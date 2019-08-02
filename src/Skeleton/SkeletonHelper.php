@@ -6,7 +6,7 @@
  * Time: 17:20
  */
 
-namespace Docker\WorkflowBundle\Skeleton;
+namespace Wf\DockerWorkflowBundle\Skeleton;
 
 class SkeletonHelper
 {

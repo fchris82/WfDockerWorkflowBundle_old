@@ -5,64 +5,64 @@ services:
     _defaults:
         public: false
 
-    Docker\WorkflowBundle\Configuration\RecipeManager:
+    Wf\DockerWorkflowBundle\Configuration\RecipeManager:
         public: true
-    Docker\WorkflowBundle\Configuration\Environment:
+    Wf\DockerWorkflowBundle\Configuration\Environment:
         public: true
-    Docker\WorkflowBundle\Wizard\Manager:
+    Wf\DockerWorkflowBundle\Wizard\Manager:
         public: true
         arguments:
             - "@Docker\\WorkflowBundle\\Wizard\\Configuration"
 
-    Docker\WorkflowBundle\Configuration\Builder:
+    Wf\DockerWorkflowBundle\Configuration\Builder:
         arguments:
             - "@Symfony\\Component\\Filesystem\\Filesystem"
             - "@Docker\\WorkflowBundle\\Configuration\\RecipeManager"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
 
-    Docker\WorkflowBundle\Configuration\Configuration:
+    Wf\DockerWorkflowBundle\Configuration\Configuration:
         arguments:
             - "@Docker\\WorkflowBundle\\Configuration\\RecipeManager"
             - "@Symfony\\Component\\Filesystem\\Filesystem"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
 
-    Docker\WorkflowBundle\Environment\Commander:
+    Wf\DockerWorkflowBundle\Environment\Commander:
         arguments:
             - "@Docker\\WorkflowBundle\\Environment\\IoManager"
             - "@Docker\\WorkflowBundle\\Environment\\WfEnvironmentParser"
 
-    Docker\WorkflowBundle\Environment\EnvParser: ~
+    Wf\DockerWorkflowBundle\Environment\EnvParser: ~
 
-    Docker\WorkflowBundle\Environment\EzEnvironmentParser:
+    Wf\DockerWorkflowBundle\Environment\EzEnvironmentParser:
         arguments:
             - "@Docker\\WorkflowBundle\\Environment\\IoManager"
             - "@Docker\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
 
-    Docker\WorkflowBundle\Environment\IoManager: ~
+    Wf\DockerWorkflowBundle\Environment\IoManager: ~
 
-    Docker\WorkflowBundle\Environment\SymfonyEnvironmentParser:
+    Wf\DockerWorkflowBundle\Environment\SymfonyEnvironmentParser:
         arguments:
             - "@Docker\\WorkflowBundle\\Environment\\IoManager"
             - "@Docker\\WorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
 
-    Docker\WorkflowBundle\Environment\WfEnvironmentParser:
+    Wf\DockerWorkflowBundle\Environment\WfEnvironmentParser:
         arguments:
             - "@Docker\\WorkflowBundle\\Configuration\\Configuration"
             - "@Symfony\\Component\\Filesystem\\Filesystem"
 
-    Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser:
+    Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser:
         arguments:
             - "@Symfony\\Component\\Filesystem\\Filesystem"
 
-    Docker\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser:
+    Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser:
         arguments:
             - "@Symfony\\Component\\Filesystem\\Filesystem"
 
-    Docker\WorkflowBundle\Wizard\Configuration:
+    Wf\DockerWorkflowBundle\Wizard\Configuration:
         arguments:
             - "%wf.wizard_user_configuration_file%"
 
-    Docker\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
+    Wf\DockerWorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
         arguments:
             - "@twig"
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"

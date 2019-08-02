@@ -6,7 +6,7 @@
  * Time: 13:11
  */
 
-namespace Docker\WorkflowBundle\Environment;
+namespace Wf\DockerWorkflowBundle\Environment;
 
 class EnvParser
 {

@@ -6,10 +6,10 @@
  * Time: 13:10
  */
 
-namespace Docker\WorkflowBundle\Event\SkeletonBuild;
+namespace Wf\DockerWorkflowBundle\Event\SkeletonBuild;
 
-use Docker\WorkflowBundle\Event\NamespacedEvent;
-use Docker\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Wf\DockerWorkflowBundle\Event\NamespacedEvent;
+use Wf\DockerWorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class PostBuildSkeletonFilesEvent extends NamespacedEvent
 {

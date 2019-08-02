@@ -6,14 +6,14 @@
  * Time: 14:58
  */
 
-namespace Docker\WorkflowBundle\Tests\Environment;
+namespace Wf\DockerWorkflowBundle\Tests\Environment;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use Docker\WorkflowBundle\Environment\EzEnvironmentParser;
-use Docker\WorkflowBundle\Environment\IoManager;
-use Docker\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Docker\WorkflowBundle\Test\Dummy\Filesystem;
+use Wf\DockerWorkflowBundle\Environment\EzEnvironmentParser;
+use Wf\DockerWorkflowBundle\Environment\IoManager;
+use Wf\DockerWorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Wf\DockerWorkflowBundle\Test\Dummy\Filesystem;
 
 class EzEnvironmentParserTest extends TestCase
 {
