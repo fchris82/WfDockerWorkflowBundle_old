@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+    test:
+        build: .
+        command: php vendor/bin/phpunit
+        working_dir: /var/www/bundle
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./:/var/www/bundle:delegated
+        user: ${CURRENT_UID}
+
+    shell:
+        build: .
+        command: /bin/sh
+        working_dir: /var/www/bundle
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./:/var/www/bundle:delegated
+        user: ${CURRENT_UID}
