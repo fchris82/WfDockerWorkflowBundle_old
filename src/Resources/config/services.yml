@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: false
+
+    Webtown\WorkflowBundle\Configuration\RecipeManager: ~
+
+    Webtown\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe:
+        tags:
+            - { name: 'kernel.event_listener', event: 'app.configuration.event.register.postbuild', priority: -999 }
