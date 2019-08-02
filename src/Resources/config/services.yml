@@ -38,7 +38,9 @@ services:
             - "@Wf\\DockerWorkflowBundle\\Environment\\IoManager"
             - "@Wf\\DockerWorkflowBundle\\Environment\\MicroParser\\ComposerInstalledVersionParser"
 
-    Wf\DockerWorkflowBundle\Environment\IoManager: ~
+    Wf\DockerWorkflowBundle\Environment\IoManager:
+        tags:
+            - { name: 'kernel.event_subscriber' }
 
     Wf\DockerWorkflowBundle\Environment\SymfonyEnvironmentParser:
         arguments:
