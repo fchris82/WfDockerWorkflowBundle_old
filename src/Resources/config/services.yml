@@ -1,5 +1,5 @@
 parameters:
-    wf.wizard_user_configuration_file: '%env(DOCKER_WORKFLOW_BASE_PATH)%/config/wizards.yml'
+    wf.wizard_user_configuration_file: '%env(HOME)%/.wf-docker-workflow/config/wizards.yml'
 
 services:
     _defaults:
