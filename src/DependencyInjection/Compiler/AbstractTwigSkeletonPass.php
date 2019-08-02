@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\DependencyInjection\Compiler;
 
-use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\Definition;
+use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 
 /**
  * Class AbstractTwigSkeletonPass

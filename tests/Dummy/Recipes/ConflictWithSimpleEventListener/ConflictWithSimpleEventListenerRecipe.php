@@ -8,13 +8,13 @@
 
 namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\ConflictWithSimpleEventListener;
 
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Twig\Environment;
 use Webtown\WorkflowBundle\Event\RegisterEventListenersInterface;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFilesEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
 use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Twig\Environment;
 
 /**
  * With this recipe we can test the SkeletonBuildBaseEvents::BEFORE_DUMP_TARGET_EXISTS event. This recipe create a

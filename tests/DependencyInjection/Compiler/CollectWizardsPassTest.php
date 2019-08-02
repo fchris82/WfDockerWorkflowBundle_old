@@ -8,6 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests\DependencyInjection\Compiler;
 
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
+use Symfony\Component\DependencyInjection\Reference;
+use Twig\Loader\FilesystemLoader;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
 use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenSkeletonWizard\OverriddenSkeletonWizard;
@@ -15,12 +21,6 @@ use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleSkeletonWiz
 use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleWizard\SimpleWizard;
 use Webtown\WorkflowBundle\WebtownWorkflowBundle;
 use Webtown\WorkflowBundle\Wizard\Manager;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Definition;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use Symfony\Component\DependencyInjection\Reference;
-use Twig\Loader\FilesystemLoader;
 
 class CollectWizardsPassTest extends TestCase
 {

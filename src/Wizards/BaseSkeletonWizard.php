@@ -8,6 +8,10 @@
 
 namespace Webtown\WorkflowBundle\Wizards;
 
+use Symfony\Component\Console\Helper\Table;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Twig\Environment;
 use Webtown\WorkflowBundle\Environment\Commander;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
@@ -20,10 +24,6 @@ use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
 use Webtown\WorkflowBundle\Skeleton\BuilderTrait;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\SkeletonManagerTrait;
-use Symfony\Component\Console\Helper\Table;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Twig\Environment;
 
 /**
  * Class BaseSkeleton.

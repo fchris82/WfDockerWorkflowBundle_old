@@ -2,12 +2,12 @@
 
 namespace Webtown\WorkflowBundle\DependencyInjection\Compiler;
 
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\Recipes\AbstractTemplateRecipe;
-use Webtown\WorkflowBundle\WebtownWorkflowBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
+use Webtown\WorkflowBundle\Configuration\RecipeManager;
+use Webtown\WorkflowBundle\Recipes\AbstractTemplateRecipe;
+use Webtown\WorkflowBundle\WebtownWorkflowBundle;
 
 class CollectRecipesPass extends AbstractTwigSkeletonPass
 {

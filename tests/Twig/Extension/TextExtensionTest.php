@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Tests\Twig\Extension;
 
-use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
 use PHPUnit\Framework\TestCase;
+use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
 
 class TextExtensionTest extends TestCase
 {

@@ -8,12 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment;
 
+use Mockery as m;
+use PHPUnit\Framework\TestCase;
 use Webtown\WorkflowBundle\Environment\EzEnvironmentParser;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
 use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
 
 class EzEnvironmentParserTest extends TestCase
 {

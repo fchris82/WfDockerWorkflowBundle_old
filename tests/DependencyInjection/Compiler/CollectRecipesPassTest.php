@@ -8,6 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests\DependencyInjection\Compiler;
 
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
+use Symfony\Component\DependencyInjection\Reference;
+use Twig\Loader\FilesystemLoader;
 use Webtown\WorkflowBundle\Configuration\RecipeManager;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\AbstractTwigSkeletonPass;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
@@ -15,12 +21,6 @@ use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\AbstractRecipe\Ab
 use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\OverriddenRecipe\OverriddenSkeletonsRecipe;
 use Webtown\WorkflowBundle\Tests\Resources\DependencyInjection\SimpleRecipe\SimpleRecipe;
 use Webtown\WorkflowBundle\WebtownWorkflowBundle;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Definition;
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use Symfony\Component\DependencyInjection\Reference;
-use Twig\Loader\FilesystemLoader;
 
 class CollectRecipesPassTest extends TestCase
 {

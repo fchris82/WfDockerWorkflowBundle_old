@@ -8,6 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Recipes\CreateBaseRecipe;
 
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Twig\Environment as TwigEnvironment;
 use Webtown\WorkflowBundle\Configuration\Builder;
 use Webtown\WorkflowBundle\Configuration\Environment;
 use Webtown\WorkflowBundle\Event\Configuration\BuildInitEvent;
@@ -19,8 +21,6 @@ use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
 use Webtown\WorkflowBundle\Recipes\SystemRecipe;
 use Webtown\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Twig\Environment as TwigEnvironment;
 
 class Recipe extends SystemRecipe implements RegisterEventListenersInterface
 {

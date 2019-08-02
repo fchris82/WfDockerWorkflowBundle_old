@@ -8,13 +8,13 @@
 
 namespace Webtown\WorkflowBundle\Tests\Exception;
 
+use Mockery as m;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use Webtown\WorkflowBundle\Environment\Commander;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Exception\WizardWfIsRequiredException;
 use Webtown\WorkflowBundle\Wizards\BaseWizard;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class WizardWfIsRequiredExceptionTest extends TestCase
 {

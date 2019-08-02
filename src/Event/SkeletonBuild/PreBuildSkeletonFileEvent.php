@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
 
+use Symfony\Component\Finder\SplFileInfo;
 use Webtown\WorkflowBundle\Event\NamespacedEvent;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\Finder\SplFileInfo;
 
 class PreBuildSkeletonFileEvent extends NamespacedEvent
 {

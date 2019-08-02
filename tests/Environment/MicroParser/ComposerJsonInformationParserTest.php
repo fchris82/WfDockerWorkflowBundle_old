@@ -8,12 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment\MicroParser;
 
-use Webtown\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser;
-use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem as SfFilesystem;
+use Webtown\WorkflowBundle\Environment\MicroParser\ComposerJsonInformationParser;
+use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
 
 class ComposerJsonInformationParserTest extends TestCase
 {

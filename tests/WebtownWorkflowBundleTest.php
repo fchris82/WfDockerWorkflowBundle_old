@@ -8,12 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests;
 
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
 use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Webtown\WorkflowBundle\WebtownWorkflowBundle;
 use Webtown\WorkflowBundle\Wizard\WizardInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class WebtownWorkflowBundleTest extends \PHPUnit\Framework\TestCase
 {

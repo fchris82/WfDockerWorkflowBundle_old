@@ -1,8 +1,6 @@
 <?php declare(strict_types=1);
 
-
 namespace Webtown\WorkflowBundle\DependencyInjection;
-
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -11,7 +9,6 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class WebtownWorkflowExtension extends Extension
 {
-
     /**
      * Loads a specific configuration.
      *
@@ -22,7 +19,7 @@ class WebtownWorkflowExtension extends Extension
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(__DIR__.'/../Resources/config')
+            new FileLocator(__DIR__ . '/../Resources/config')
         );
         $loader->load('services.yml');
     }

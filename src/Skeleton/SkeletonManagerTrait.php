@@ -8,6 +8,10 @@
 
 namespace Webtown\WorkflowBundle\Skeleton;
 
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
+use Twig\Environment;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
@@ -16,10 +20,6 @@ use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
 use Webtown\WorkflowBundle\Exception\CircularReferenceException;
 use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
-use Twig\Environment;
 
 trait SkeletonManagerTrait
 {

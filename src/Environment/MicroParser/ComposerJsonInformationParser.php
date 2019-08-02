@@ -8,10 +8,10 @@
 
 namespace Webtown\WorkflowBundle\Environment\MicroParser;
 
-use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Webtown\WorkflowBundle\Exception\ValueIsMissingException;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Symfony\Component\Filesystem\Filesystem;
+use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
+use Webtown\WorkflowBundle\Exception\ValueIsMissingException;
 
 class ComposerJsonInformationParser implements MicroParserInterface
 {

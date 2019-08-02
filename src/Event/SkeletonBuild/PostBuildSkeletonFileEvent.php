@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
 
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 use Symfony\Component\Finder\SplFileInfo;
+use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 
 class PostBuildSkeletonFileEvent extends PreBuildSkeletonFileEvent
 {

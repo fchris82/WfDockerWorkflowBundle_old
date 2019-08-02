@@ -8,13 +8,6 @@
 
 namespace Webtown\WorkflowBundle\Configuration;
 
-use Webtown\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
-use Webtown\WorkflowBundle\Event\ConfigurationEvents;
-use Webtown\WorkflowBundle\Exception\InvalidWfVersionException;
-use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
-use Webtown\WorkflowBundle\Recipes\SystemRecipe;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -25,6 +18,13 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Yaml\Parser;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Webtown\WorkflowBundle\Event\Configuration\PreProcessConfigurationEvent;
+use Webtown\WorkflowBundle\Event\ConfigurationEvents;
+use Webtown\WorkflowBundle\Exception\InvalidWfVersionException;
+use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
+use Webtown\WorkflowBundle\Recipes\BaseRecipe;
+use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
+use Webtown\WorkflowBundle\Recipes\SystemRecipe;
 
 class Configuration implements ConfigurationInterface
 {

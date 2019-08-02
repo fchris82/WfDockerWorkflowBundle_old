@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Environment;
 
+use Symfony\Component\Console\Question\ChoiceQuestion;
 use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
 use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
-use Symfony\Component\Console\Question\ChoiceQuestion;
 
 class SymfonyEnvironmentParser
 {

@@ -8,6 +8,14 @@
 
 namespace Webtown\WorkflowBundle\Tests\Configuration;
 
+use Mockery as m;
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Twig\Environment;
 use Webtown\WorkflowBundle\Configuration\Configuration;
 use Webtown\WorkflowBundle\Configuration\RecipeManager;
 use Webtown\WorkflowBundle\Exception\InvalidWfVersionException;
@@ -19,14 +27,6 @@ use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
 use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
 use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemWithoutConfigurationRecipe\SystemWithoutConfigurationRecipe;
 use Webtown\WorkflowBundle\Tests\TestCase;
-use Mockery as m;
-use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
-use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Yaml\Yaml;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Twig\Environment;
 
 class ConfigurationTest extends TestCase
 {

@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Environment;
 
-use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
+use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
 
 class EzEnvironmentParser extends SymfonyEnvironmentParser
 {

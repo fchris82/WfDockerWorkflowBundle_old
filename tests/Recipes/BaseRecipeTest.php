@@ -8,18 +8,18 @@
 
 namespace Webtown\WorkflowBundle\Tests\Recipes;
 
-use Webtown\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent\SimpleSkeletonParent;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Dumper\YamlReferenceDumper;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Yaml\Yaml;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
+use Webtown\WorkflowBundle\Skeleton\FileType\DockerComposeSkeletonFile;
+use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
+use Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
+use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Simple\SimpleRecipe;
+use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkeletonParent\SimpleSkeletonParent;
 
 class BaseRecipeTest extends TestCase
 {

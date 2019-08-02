@@ -8,6 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests\Configuration;
 
+use Mockery as m;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 use Webtown\WorkflowBundle\Configuration\Builder;
 use Webtown\WorkflowBundle\Configuration\RecipeManager;
 use Webtown\WorkflowBundle\Event\ConfigurationEvents;
@@ -19,12 +25,6 @@ use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener\SimpleEventLi
 use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkip\SimpleSkipRecipe;
 use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile\SimpleSkipFileRecipe;
 use Webtown\WorkflowBundle\Tests\Dummy\Recipes\SystemRecipe\SystemRecipe;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
 
 class BuilderTest extends TestCase
 {

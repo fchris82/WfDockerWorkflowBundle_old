@@ -8,12 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Tests;
 
-use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
+use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
+use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 
 class SkeletonTestCase extends TestCase
 {

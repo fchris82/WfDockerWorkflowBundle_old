@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Tests\Skeleton;
 
-use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 use PHPUnit\Framework\TestCase;
+use Webtown\WorkflowBundle\Skeleton\SkeletonHelper;
 
 class SkeletonHelperTest extends TestCase
 {

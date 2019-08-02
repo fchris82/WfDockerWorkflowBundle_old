@@ -8,6 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Tests\Recipes\CreateBaseRecipe;
 
+use Mockery as m;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\Yaml\Yaml;
 use Webtown\WorkflowBundle\Event\Configuration\BuildInitEvent;
 use Webtown\WorkflowBundle\Event\ConfigurationEvents;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
@@ -20,9 +23,6 @@ use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
 use Webtown\WorkflowBundle\Tests\Dummy\Configuration\Environment;
 use Webtown\WorkflowBundle\Tests\SkeletonTestCase;
-use Mockery as m;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Yaml\Yaml;
 
 class RecipeTest extends SkeletonTestCase
 {

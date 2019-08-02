@@ -2,12 +2,12 @@
 
 namespace Webtown\WorkflowBundle;
 
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectRecipesPass;
 use Webtown\WorkflowBundle\DependencyInjection\Compiler\CollectWizardsPass;
 use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Webtown\WorkflowBundle\Wizard\WizardInterface;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class WebtownWorkflowBundle extends Bundle
 {

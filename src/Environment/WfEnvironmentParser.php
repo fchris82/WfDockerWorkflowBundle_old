@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Environment;
 
-use Webtown\WorkflowBundle\Configuration\Configuration;
 use Symfony\Component\Filesystem\Filesystem;
+use Webtown\WorkflowBundle\Configuration\Configuration;
 
 class WfEnvironmentParser
 {

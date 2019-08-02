@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Tests\Skeleton;
 
-use Webtown\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
+use Webtown\WorkflowBundle\Skeleton\SkeletonTwigFileInfo;
 
 class SkeletonTwigFileInfoTest extends TestCase
 {

@@ -8,6 +8,7 @@
 
 namespace Webtown\WorkflowBundle\Tests\Wizard;
 
+use PHPUnit\Framework\TestCase;
 use Webtown\WorkflowBundle\Exception\ConfigurationItemNotFoundException;
 use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
 use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
@@ -16,7 +17,6 @@ use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\MissingWizard;
 use Webtown\WorkflowBundle\Wizard\Configuration;
 use Webtown\WorkflowBundle\Wizard\ConfigurationItem;
 use Webtown\WorkflowBundle\Wizards\BaseWizard;
-use PHPUnit\Framework\TestCase;
 
 class ConfigurationTest extends TestCase
 {

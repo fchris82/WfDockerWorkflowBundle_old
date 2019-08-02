@@ -8,6 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Configuration;
 
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Finder\Finder;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Webtown\WorkflowBundle\Event\Configuration\BuildInitEvent;
 use Webtown\WorkflowBundle\Event\Configuration\RegisterEvent;
 use Webtown\WorkflowBundle\Event\Configuration\VerboseInfoEvent;
@@ -21,9 +24,6 @@ use Webtown\WorkflowBundle\Recipes\CreateBaseRecipe\Recipe;
 use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
 use Webtown\WorkflowBundle\Skeleton\BuilderTrait;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Finder\Finder;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 class Builder
 {

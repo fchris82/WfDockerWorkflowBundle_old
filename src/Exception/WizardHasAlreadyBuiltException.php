@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Exception;
 
-use Webtown\WorkflowBundle\Wizards\BaseWizard;
 use Throwable;
+use Webtown\WorkflowBundle\Wizards\BaseWizard;
 
 class WizardHasAlreadyBuiltException extends \Exception
 {

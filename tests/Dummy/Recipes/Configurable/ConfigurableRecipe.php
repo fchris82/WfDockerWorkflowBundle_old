@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\Configurable;
 
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
+use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 
 class ConfigurableRecipe extends BaseRecipe
 {

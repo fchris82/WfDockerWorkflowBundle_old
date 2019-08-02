@@ -8,6 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Tests\Wizards;
 
+use Mockery as m;
+use Symfony\Component\Console\Question\Question;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use Webtown\WorkflowBundle\Environment\Commander;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
@@ -15,9 +18,6 @@ use Webtown\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
 use Webtown\WorkflowBundle\Tests\Dummy\Environment\IoManager as IoManagerDummy;
 use Webtown\WorkflowBundle\Tests\Dummy\Wizards\BaseWizard;
 use Webtown\WorkflowBundle\Tests\TestCase;
-use Mockery as m;
-use Symfony\Component\Console\Question\Question;
-use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class BaseWizardTest extends TestCase
 {

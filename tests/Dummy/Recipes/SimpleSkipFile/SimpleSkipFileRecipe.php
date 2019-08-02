@@ -8,10 +8,10 @@
 
 namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleSkipFile;
 
+use Symfony\Component\Finder\SplFileInfo;
 use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
 use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\Finder\SplFileInfo;
 
 class SimpleSkipFileRecipe extends BaseRecipe
 {

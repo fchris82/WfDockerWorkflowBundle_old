@@ -8,10 +8,10 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment\MicroParser;
 
-use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Exception\FileNotFoundException;
+use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
+use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
 
 class ComposerInstalledVersionParserTest extends TestCase
 {

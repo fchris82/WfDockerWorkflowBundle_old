@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Event\Configuration;
 
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Symfony\Contracts\EventDispatcher\Event;
+use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 
 class RegisterEvent extends Event
 {

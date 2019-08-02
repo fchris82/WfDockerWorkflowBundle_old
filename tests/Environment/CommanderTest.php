@@ -8,14 +8,14 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment;
 
+use Mockery as m;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Filesystem\Filesystem;
 use Webtown\WorkflowBundle\Configuration\Configuration;
 use Webtown\WorkflowBundle\Environment\Commander;
 use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
 use Webtown\WorkflowBundle\Exception\CommanderRunException;
 use Webtown\WorkflowBundle\Tests\Dummy\Environment\IoManager;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Filesystem\Filesystem;
 
 class CommanderTest extends TestCase
 {
@@ -70,7 +70,7 @@ class CommanderTest extends TestCase
             ], "CommanderTest.php\nEzEnvironmentParserTest.php\nMicroParser\nSymfonyEnvironmentParserTest.php\nWfEnvironmentParserTest.php"],
             [__DIR__, 'ls -e', [
                 '[exec] <comment>cd ' . __DIR__ . ' <question>&&</question> ls -e</comment>',
-                '[<error>ERROR</error> (2)] cd ' . __DIR__ . ' <question>&&</question> ls -e',
+                '[<error>ERROR</error> (1)] cd ' . __DIR__ . ' <question>&&</question> ls -e',
             ], new CommanderRunException('ls -e', '')],
         ];
     }

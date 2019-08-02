@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Configuration;
 
+use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Webtown\WorkflowBundle\Exception\MissingRecipeException;
 use Webtown\WorkflowBundle\Recipes\BaseRecipe;
-use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 class RecipeManager
 {

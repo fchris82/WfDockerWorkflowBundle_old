@@ -8,6 +8,12 @@
 
 namespace Webtown\WorkflowBundle\Recipes;
 
+use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
+use Symfony\Component\Config\Definition\Builder\NodeDefinition;
+use Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use Symfony\Component\Finder\SplFileInfo;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
+use Twig\Environment;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFileEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PreBuildSkeletonFileEvent;
@@ -17,12 +23,6 @@ use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\FileType\MakefileSkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\SkeletonManagerTrait;
-use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
-use Symfony\Component\Config\Definition\Builder\NodeDefinition;
-use Symfony\Component\Config\Definition\Builder\TreeBuilder;
-use Symfony\Component\Finder\SplFileInfo;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-use Twig\Environment;
 
 abstract class BaseRecipe
 {

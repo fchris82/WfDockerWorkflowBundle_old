@@ -8,8 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Recipes;
 
-use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
+use Webtown\WorkflowBundle\Exception\RecipeHasNotConfigurationException;
 
 abstract class HiddenRecipe extends BaseRecipe
 {

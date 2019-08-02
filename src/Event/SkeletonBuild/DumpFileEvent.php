@@ -8,9 +8,9 @@
 
 namespace Webtown\WorkflowBundle\Event\SkeletonBuild;
 
+use Symfony\Component\Filesystem\Filesystem;
 use Webtown\WorkflowBundle\Event\NamespacedEvent;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\Filesystem\Filesystem;
 
 class DumpFileEvent extends NamespacedEvent
 {

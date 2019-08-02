@@ -8,11 +8,11 @@
 
 namespace Webtown\WorkflowBundle\Tests\Recipes;
 
-use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
+use Webtown\WorkflowBundle\Tests\Dummy\Recipes\Hidden\HiddenRecipe;
 
 class HiddenRecipeTest extends TestCase
 {

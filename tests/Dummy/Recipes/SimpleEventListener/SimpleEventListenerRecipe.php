@@ -8,6 +8,8 @@
 
 namespace Webtown\WorkflowBundle\Tests\Dummy\Recipes\SimpleEventListener;
 
+use Symfony\Component\Finder\SplFileInfo;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Webtown\WorkflowBundle\Event\RegisterEventListenersInterface;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\PostBuildSkeletonFilesEvent;
@@ -18,8 +20,6 @@ use Webtown\WorkflowBundle\Recipes\HiddenRecipe;
 use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\Finder\SplFileInfo;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 /**
  * The recipe as an event listener too.

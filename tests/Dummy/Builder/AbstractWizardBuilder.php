@@ -8,13 +8,6 @@
 
 namespace Webtown\WorkflowBundle\Tests\Dummy\Builder;
 
-use Webtown\WorkflowBundle\Environment\Commander;
-use Webtown\WorkflowBundle\Environment\IoManager;
-use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
-use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Webtown\WorkflowBundle\Tests\Dummy\Input;
-use Webtown\WorkflowBundle\Tests\Dummy\QuestionHelper;
-use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
 use Mockery as m;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Event\ConsoleCommandEvent;
@@ -24,6 +17,13 @@ use Symfony\Component\Console\Tests\Fixtures\DummyOutput;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
+use Webtown\WorkflowBundle\Environment\Commander;
+use Webtown\WorkflowBundle\Environment\IoManager;
+use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
+use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
+use Webtown\WorkflowBundle\Tests\Dummy\Input;
+use Webtown\WorkflowBundle\Tests\Dummy\QuestionHelper;
+use Webtown\WorkflowBundle\Twig\Extension\TextExtension;
 
 /**
  * Class AbstractWizardBuilder

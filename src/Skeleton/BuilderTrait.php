@@ -8,14 +8,14 @@
 
 namespace Webtown\WorkflowBundle\Skeleton;
 
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\Filesystem\Filesystem;
 use Webtown\WorkflowBundle\Event\SkeletonBuild\DumpFileEvent;
 use Webtown\WorkflowBundle\Event\SkeletonBuildBaseEvents;
 use Webtown\WorkflowBundle\Exception\SkipSkeletonFileException;
 use Webtown\WorkflowBundle\Skeleton\FileType\ExecutableSkeletonFile;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonDirectory;
 use Webtown\WorkflowBundle\Skeleton\FileType\SkeletonFile;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Filesystem\Filesystem;
 
 trait BuilderTrait
 {

@@ -8,15 +8,15 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment;
 
+use Mockery as m;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Console\Question\ChoiceQuestion;
+use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Environment\MicroParser\ComposerInstalledVersionParser;
 use Webtown\WorkflowBundle\Environment\SymfonyEnvironmentParser;
 use Webtown\WorkflowBundle\Exception\InvalidComposerVersionNumber;
 use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Console\Question\ChoiceQuestion;
-use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 
 class SymfonyEnvironmentParserTest extends TestCase
 {

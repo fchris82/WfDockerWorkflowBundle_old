@@ -8,6 +8,7 @@
 
 namespace Webtown\WorkflowBundle\Tests\Wizard;
 
+use PHPUnit\Framework\TestCase;
 use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base1Wizard;
 use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\Base2Wizard;
 use Webtown\WorkflowBundle\Tests\Resources\Wizard\Configuration\DisabledWizard;
@@ -16,7 +17,6 @@ use Webtown\WorkflowBundle\Wizard\Configuration;
 use Webtown\WorkflowBundle\Wizard\ConfigurationItem;
 use Webtown\WorkflowBundle\Wizard\Manager;
 use Webtown\WorkflowBundle\Wizard\WizardInterface;
-use PHPUnit\Framework\TestCase;
 
 class ManagerTest extends TestCase
 {

@@ -8,13 +8,13 @@
 
 namespace Webtown\WorkflowBundle\Tests\Environment;
 
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 use Webtown\WorkflowBundle\Configuration\Configuration;
 use Webtown\WorkflowBundle\Configuration\RecipeManager;
 use Webtown\WorkflowBundle\Environment\WfEnvironmentParser;
 use Webtown\WorkflowBundle\Test\Dummy\Filesystem;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
-use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class WfEnvironmentParserTest extends TestCase
 {

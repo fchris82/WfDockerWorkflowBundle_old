@@ -2,10 +2,10 @@
 
 namespace Webtown\WorkflowBundle\DependencyInjection\Compiler;
 
-use Webtown\WorkflowBundle\WebtownWorkflowBundle;
-use Webtown\WorkflowBundle\Wizard\Manager;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
+use Webtown\WorkflowBundle\WebtownWorkflowBundle;
+use Webtown\WorkflowBundle\Wizard\Manager;
 
 class CollectWizardsPass extends AbstractTwigSkeletonPass
 {

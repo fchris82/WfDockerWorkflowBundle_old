@@ -8,15 +8,15 @@
 
 namespace Webtown\WorkflowBundle\Wizards;
 
+use Symfony\Component\Console\Question\Question;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Webtown\WorkflowBundle\Environment\Commander;
 use Webtown\WorkflowBundle\Environment\IoManager;
 use Webtown\WorkflowBundle\Event\Wizard\BuildWizardEvent;
 use Webtown\WorkflowBundle\Exception\WizardHasAlreadyBuiltException;
 use Webtown\WorkflowBundle\Exception\WizardSomethingIsRequiredException;
 use Webtown\WorkflowBundle\Wizard\WizardInterface;
-use Symfony\Component\Console\Question\Question;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 /**
  * Class BaseSkeleton.

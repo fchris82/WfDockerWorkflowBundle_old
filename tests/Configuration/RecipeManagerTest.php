@@ -8,14 +8,14 @@
 
 namespace Webtown\WorkflowBundle\Tests\Configuration;
 
-use Webtown\WorkflowBundle\Configuration\RecipeManager;
-use Webtown\WorkflowBundle\Exception\MissingRecipeException;
-use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
+use Webtown\WorkflowBundle\Configuration\RecipeManager;
+use Webtown\WorkflowBundle\Exception\MissingRecipeException;
+use Webtown\WorkflowBundle\Recipes\BaseRecipe;
 
 class RecipeManagerTest extends TestCase
 {
