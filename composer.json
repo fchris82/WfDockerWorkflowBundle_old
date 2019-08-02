@@ -26,8 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Wf\\DockerWorkflowBundle\\Tests\\": "tests/",
             "Wf\\DockerWorkflowBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wf\\DockerWorkflowBundle\\Tests\\": "tests/"
         }
     }
 }
