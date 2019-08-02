@@ -10,7 +10,7 @@ namespace Webtown\WorkflowBundle\Event;
 
 class ExtensionEvents
 {
-    const PRE_INSTALL_EVENT = 'app.extension.pre_install';
-    const POST_INSTALL_EVENT = 'app.extension.post_install';
-    const CLEANUP_INSTALL_EVENT = 'app.extension.cleanup_install';
+    const PRE_INSTALL_EVENT = 'wf.extension.pre_install';
+    const POST_INSTALL_EVENT = 'wf.extension.post_install';
+    const CLEANUP_INSTALL_EVENT = 'wf.extension.cleanup_install';
 }

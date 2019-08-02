@@ -68,4 +68,4 @@ services:
             - "@Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
             - "@Webtown\\WorkflowBundle\\Configuration\\Environment"
         tags:
-            - { name: 'kernel.event_listener', event: 'app.configuration.event.register.postbuild', priority: -999 }
+            - { name: 'kernel.event_listener', event: 'wf.configuration.event.register.postbuild', priority: -999 }
