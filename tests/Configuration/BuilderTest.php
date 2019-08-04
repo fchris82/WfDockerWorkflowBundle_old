@@ -82,7 +82,7 @@ class BuilderTest extends TestCase
             $recipeManager->addRecipe($preSystemRecipe);
             $eventDispatcher->addListener(
                 ConfigurationEvents::REGISTER_EVENT_PREBUILD,
-                [$preSystemRecipe, 'onAppConfigurationEventRegisterPrebuild']
+                [$preSystemRecipe, 'onWfConfigurationEventRegisterPrebuild']
             );
         }
         foreach ($postSystemRecipes as $recipeName => $configDefinition) {
@@ -90,7 +90,7 @@ class BuilderTest extends TestCase
             $recipeManager->addRecipe($postSystemRecipe);
             $eventDispatcher->addListener(
                 ConfigurationEvents::REGISTER_EVENT_POSTBUILD,
-                [$postSystemRecipe, 'onAppConfigurationEventRegisterPostbuild']
+                [$postSystemRecipe, 'onWfConfigurationEventRegisterPostbuild']
             );
         }
 
